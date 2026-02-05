@@ -1,318 +1,86 @@
-@import "tailwindcss";
-
 /* ============================================
    COACH YOHAN - DESIGN SYSTEM
    Theme: Light, Modern, Professional, Bold
    ============================================ */
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700;800;900&family=Anton&family=Bebas+Neue&display=swap');
 
+/* 2. Import Tailwind v4 */
+@import "tailwindcss";
 /* ============================================
    CSS VARIABLES (Custom Properties)
    ============================================ */
-:root {
-    /* Colors */
-    --color-primary: #0046DE;
-    --color-primary-dark: #0035B0;
-    --color-secondary: #000000;
-    --color-background: #FFFFFF;
-    --color-text: #1a1a1a;
-    --color-text-muted: #6b7280;
-    --color-accent: #0046DE;
-    --color-whatsapp: #25D366;
-    --color-whatsapp-dark: #128C7E;
-
-    /* Font Families */
-    --font-heading: 'Bebas Neue', sans-serif;
-    --font-heading-2: 'Oswald', sans-serif;
-    --font-body: 'Inter', sans-serif;
-
-    .bebas-neue-regular {
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .oswald-regular {
-        font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-
-    /* Spacing */
-    --section-padding-y: 5rem;
-    --section-padding-x: 1rem;
+/* 3. Define Theme Variables */
+@theme {
+  /* === COLORS (Must start with --color-) === */
+  
+  /* Primary */
+  --color-primary: #0046DE;
+  --color-primary-hover: #0037B0;
+  
+  /* Backgrounds */
+  --color-bg-white: #F9F9F9;      /* Main background */
+  --color-bg-secondary: #F3F4F6;  /* Secondary background */
+  --color-card-white: #FFFFFF;    /* White cards */
+  
+  /* Dark Theme */
+  --color-dark-bg: #0F0F23;       /* Main dark background (Not #000000) */
+  --color-card-dark: #171736;     /* Dark cards */
+  
+  /* Text */
+  --color-text-body: #4B5563;     /* Paragraph text */
+  --color-text-muted: #6b7280;
+  
+  /* Accents */
+  --color-hover-light: #EFF6FF;
+  --color-line: #C2D8F4;
+  
+  /* === FONTS (Must start with --font-) === */
+  /* Usage: font-title, font-heading, font-body */
+  --font-title: 'Saira', sans-serif;
+  --font-heading: 'Bebas Neue', cursive;
+  --font-body: 'Saira', sans-serif;
+  
+  /* === SPACING (Must start with --spacing-) === */
+  /* Usage: p-xs, m-xl, gap-md */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+  
+  /* === SHADOWS (Must start with --shadow-) === */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 8px 24px rgba(0, 70, 222, 0.15);
+  
+  /* === ANIMATIONS (Must start with --animate-) === */
+  --animate-float: float 3s ease-in-out infinite;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
 }
-
 /* ============================================
    BASE STYLES
    ============================================ */
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: var(--font-body);
-    background-color: var(--color-background);
-    color: var(--color-text);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-body);
+  color: var(--color-text-body);
+  background-color: var(--color-bg-white);
 }
-
-/* ============================================
-   TYPOGRAPHY
-   ============================================ */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-heading-2);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 1.1;
-    color: var(--color-secondary);
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
 }
-
-h1 {
-    font-size: 4rem;
+/* Utility tambahan yang tidak bisa di-handle @theme */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-h2 {
-    font-size: 3rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-@media (max-width: 640px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-    }
-}
-
-/* ============================================
-   BUTTONS
-   Note: Sharp corners (NO rounded)
-   ============================================ */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.875rem 2rem;
-    font-family: var(--font-body);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    border: none;
-    text-decoration: none;
-}
-
-.btn-primary {
-    background-color: var(--color-primary);
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: var(--color-primary-dark);
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-}
-
-.btn-secondary:hover {
-    background-color: var(--color-primary);
-    color: white;
-}
-
-.btn-whatsapp {
-    background-color: var(--color-whatsapp);
-    color: white;
-    padding: 1rem 2.5rem;
-}
-
-.btn-whatsapp:hover {
-    background-color: var(--color-whatsapp-dark);
-}
-
-/* ============================================
-   CARDS
-   Note: Sharp corners (NO rounded)
-   ============================================ */
-.card {
-    background-color: white;
-    border: 1px solid #e5e7eb;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease;
-}
-
-.card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.card-highlight {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 1.5rem;
-    box-shadow: 0 10px 25px -5px rgba(0, 70, 222, 0.4);
-}
-
-.card-highlight h3,
-.card-highlight h4 {
-    color: white;
-}
-
-/* ============================================
-   SECTIONS
-   ============================================ */
-.section {
-    padding: var(--section-padding-y) var(--section-padding-x);
-}
-
-@media (min-width: 768px) {
-    .section {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .section {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-}
-
-.section-light {
-    background-color: var(--color-background);
-}
-
-.section-blue {
-    background-color: var(--color-primary);
-    color: white;
-}
-
-.section-blue h1,
-.section-blue h2,
-.section-blue h3 {
-    color: white;
-}
-
-.section-dark {
-    background-color: var(--color-secondary);
-    color: white;
-}
-
-.section-dark h1,
-.section-dark h2,
-.section-dark h3 {
-    color: white;
-}
-
-/* ============================================
-   UTILITY CLASSES
-   ============================================ */
-.text-primary {
-    color: var(--color-primary);
-}
-
-.bg-primary {
-    background-color: var(--color-primary);
-}
-
-.font-heading {
-    font-family: var(--font-heading);
-}
-
-.font-body {
-    font-family: var(--font-body);
-}
-
-/* Container */
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-/* Section Title Underline */
-.section-title {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background-color: var(--color-primary);
-}
-
-/* ============================================
-   ANIMATIONS
-   ============================================ */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-fade-in-up {
-    animation: fadeInUp 0.6s ease forwards;
-}
-
-/* ============================================
-   SCROLLBAR (Optional - for modern look)
-   ============================================ */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--color-primary-dark);
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
 }
