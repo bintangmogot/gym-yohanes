@@ -1,5 +1,6 @@
 <template>
   <div class="bg-bg-white bg-[url('/src/assets/images/hero.png')] bg-cover bg-center font-body min-h-screen">
+    <!-- <header> untuk bagian kepala website (navbar, logo) -->
     <header class="absolute inset-x-0 top-0 z-50 border-b-2 border-primary">
       <!-- Navbar -->
       <nav class="flex items-center bg-card-white justify-between py-4 px-6 md:px-12 lg:px-24" aria-label="Global">
@@ -55,10 +56,14 @@
       </Dialog>
     </header>
 
-    <div class="relative isolate px-6 pt-20 lg:px-12">
+    <!-- <main> menandakan konten utama dari halaman ini -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="relative isolate px-6 pt-20 lg:px-12 min-h-screen">
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-gradient-to-tr from-primary to-primary-hover opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-primary to-primary-hover opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
+        
       <div class="mx-auto py-32 sm:py-20 lg:py-32">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div class="relative px-4 py-1 text-button-sm text-white ring-1 ring-white hover:ring-white/20 bg-white/15">
@@ -66,18 +71,57 @@
           </div>
         </div>
         <div class="text-center">
+            <!-- <mark> untuk menyoroti teks penting -->
           <h1 class="text-5xl md:text-hero font-title tracking-tight text-white">TRAIN WITH <span class="text-primary block">YOHANES</span></h1>
-          <p class="mt-8 text-lg font-body font-medium text-white sm:text-xl max-w-xl mx-auto">Transform your physique and performance with gritty, high-impact coachin. No excuses, just results.</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="bg-primary px-8 py-3 text-button font-heading text-white shadow-card hover:bg-primary-hover transition-all hover-lift">BOOK YOUR SESSION</a>
-            <a href="#" class="text-button font-heading text-bg-white hover:text-primary hover:bg-white hover-lift transition-colors border border-bg-white px-8 py-3">LEARN MORE</a>
+            <p class="mt-8 text-lg font-body font-medium text-white sm:text-xl max-w-xl mx-auto">
+              Transform your physique and performance with gritty, high-impact coaching. <mark class="bg-primary text-white px-1">No excuses</mark>, just results.
+            </p>
+          <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a href="#" class="bg-primary px-8 py-3 text-button font-heading text-white shadow-card hover:bg-primary-hover transition-all hover-lift w-full sm:w-auto">BOOK YOUR SESSION</a>
+            <a href="#" class="text-button font-heading text-bg-white hover:text-primary hover:bg-white hover-lift transition-colors border border-bg-white px-8 py-3 w-full sm:w-auto">LEARN MORE</a>
           </div>
         </div>
       </div>
-      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-        <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-gradient-to-tr from-primary to-primary-hover opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+          <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-primary to-primary-hover opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+      </section>
+
+      <!-- <article> untuk konten yang bisa berdiri sendiri (seperti testimoni atau artikel blog) -->
+      <section class="bg-bg-secondary py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+          <article class="bg-white p-8 shadow-card border-l-4 border-primary">
+            <h2 class="text-2xl font-title mb-4">MEMBER SUCCESS STORY</h2>
+            <p class="italic text-text-body">"Training with Coach Yohan changed my life. I lost 15kg in 3 months!"</p>
+            <!-- <time> memberikan format waktu yang bisa dibaca mesin -->
+            <footer class="mt-4 text-sm text-line">
+              Published on <time datetime="2024-02-08">Feb 8, 2024</time>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <!-- <aside> untuk konten sampingan yang tidak langsung berhubungan dengan alur utama -->
+      <aside class="bg-dark-bg text-white py-12 px-6">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center">
+          <!-- <figure> dan <figcaption> untuk gambar dan keterangannya -->
+          <figure class="shrink-0">
+            <img class="w-32 h-32 rounded-full border-2 border-primary" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=200" alt="Training Gear">
+            <figcaption class="text-xs text-center mt-2 text-primary">GEAR UP</figcaption>
+          </figure>
+          <div>
+            <h3 class="text-xl font-heading mb-2">QUICK TIP</h3>
+            <p>Always stay hydrated during your Bali sessions! <mark class="bg-primary px-1 font-bold">Drink 3L daily.</mark></p>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <!-- Custom footer content or placeholder -->
+      <div class="bg-card-white border-t border-line py-8 px-6 text-center">
+        <p class="text-text-body font-body">&copy; 2024 Coach Yohanes Mogot. All Rights Reserved.</p>
       </div>
-    </div>
+    </footer>
   </div>
   
 </template>
