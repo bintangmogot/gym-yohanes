@@ -23,7 +23,7 @@
        <div class="flex flex-col items-start gap-5 md:gap-10 max-w-xl mx-auto lg:mx-0">
           <h3 class="text-dark-bg font-anton font-bold text-xl md:text-[32px] tracking-[4%] uppercase">Get In Shape in Bali</h3>
           
-          <h2 class="text-8xl xl:text-9xl text-primary font-anton font-black uppercase tracking-tighter leading-[0.85] md:leading-[0.8]">
+          <h2 class="text-8xl xl:text-9xl text-primary font-anton font-black uppercase leading-[0.85] md:leading-[0.8]">
             Yohanes <br class="md:hidden lg:block"/> Mogot
           </h2>
           

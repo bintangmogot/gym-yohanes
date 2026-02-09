@@ -2,7 +2,7 @@
   <section class="bg-bg-white py-20 px-6 lg:px-30" data-aos="fade-up">
     <div class="flex flex-col lg:flex-row gap-12 xl:gap-24 items-center justify-center max-w-7xl mx-auto">
       <!-- Left: Image -->
-      <div class="relative group min-w-[320px] lg:min-w-[450px] max-w-[400px]">
+      <div class="relative group min-w-[320px] xl:min-w-[450px] max-w-[400px]">
           <!-- Kotak Garis (Diletakkan di belakang dengan bingkai biru) -->
         <div class="absolute -top-6 -left-6 w-full h-full border-2 border-primary z-0"></div>
         
