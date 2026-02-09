@@ -5,7 +5,7 @@
         real people. real <span class="text-primary">results.</span>
       </h2>
 
-      <div class="w-full">
+      <div class="w-full bg-none shadow-none md:shadow-xl md:bg-white md:py-10 xl:py-20">
         <!-- ========================================== -->
         <!-- VERSI MOBILE -->
         <!-- ========================================== -->
@@ -24,10 +24,10 @@
         <!-- ========================================== -->
         <!-- VERSI DESKTOP -->
         <!-- ========================================== -->
-        <div class="carousel w-full hidden md:flex shadow-xl bg-base-200 py-20" @scroll="handleScroll($event, 'd')">
+        <div class="carousel w-full hidden md:flex" @scroll="handleScroll($event, 'd')">
           <div v-for="(chunk, index) in desktopChunks" :key="'d-' + index" :id="'d' + (index + 1)" class="carousel-item relative w-full">
             <div class="grid grid-cols-3 gap-6 w-full px-16 xl:px-20">
-              <div v-for="(img, i) in chunk" :key="i" class="w-full relative group cursor-pointer overflow-hidden rounded-box" @click="openModal(img.image)">
+              <div v-for="(img, i) in chunk" :key="i" class="w-full relative group cursor-pointer overflow-hidden" @click="openModal(img.image)">
                 <img :src="img.image" class="w-full object-cover aspect-4/3 cursor-zoom-in group-hover:scale-110 transition-transform duration-500 z-1" :alt="img.title" />
                 <div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent z-2 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                   <h3 class="text-3xl font-anton uppercase text-white drop-shadow-lg">{{ img.title }}</h3>
@@ -41,7 +41,6 @@
             </div>
           </div>
         </div>
-
         <!-- INDIKATOR DOTS -->
         <div class="flex justify-center w-full py-4 gap-2">
           <!-- Dots Mobile -->
@@ -74,7 +73,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-        <img :src="selectedImage" class="max-h-[85vh] w-auto rounded-lg shadow-2xl" alt="Full screen testimonial" @click.stop />
+        <img :src="selectedImage" class="max-h-[85vh] w-auto shadow-2xl" alt="Full screen testimonial" @click.stop />
       </div>
     </div>
   </section>

@@ -6,6 +6,7 @@
       <Hero2nd />
       <About />
       <TestimonialCarousel />
+      <Transforms />
       <MemberSuccess />
       <QuickTip />
     </main>
