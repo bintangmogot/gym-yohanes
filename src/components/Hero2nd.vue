@@ -3,7 +3,7 @@
     <!-- Bagian Gambar -->
     <div class="w-full lg:w-1/2 flex items-center justify-center px-4 lg:px-0">
         <!-- Mobile/Tab View: Framed Design -->
-        <div class="relative group w-full max-w-[400px] lg:max-w-none lg:w-full lg:h-full mx-auto lg:mx-0">
+        <div class="relative group w-full max-w-[400px] max-h-[2000px] lg:max-w-none lg:w-full lg:h-full mx-auto lg:mx-0">
             <!-- Bingkai Biru: Hanya muncul di mobile/tab -->
             <div class="lg:hidden absolute -top-4 -left-4 md:-top-6 md:-left-6 w-full h-full border-2 border-primary z-0"></div>
             
