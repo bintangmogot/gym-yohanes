@@ -9,9 +9,10 @@
       <Transforms />
       <TrainingPackages />
       <MealPlan />
+      <Facts />
+      <Location />
       <QuickTip />
       <MemberSuccess />
-
     </main>
     <Footer />
   </div>
@@ -27,6 +28,8 @@ import Transforms from './components/Transforms.vue';
 import TrainingPackages from './components/TrainingPackages.vue';
 import MealPlan from './components/MealPlan.vue';
 import MemberSuccess from './components/MemberSuccess.vue';
+import Facts from './components/Facts.vue'
 import QuickTip from './components/QuickTip.vue';
 import Footer from './components/Footer.vue';
+import Location from './components/Location.vue';
 </script>
