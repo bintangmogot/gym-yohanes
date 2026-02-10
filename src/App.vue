@@ -8,8 +8,10 @@
       <TestimonialCarousel />
       <Transforms />
       <TrainingPackages />
-      <MemberSuccess />
+      <MealPlan />
       <QuickTip />
+      <MemberSuccess />
+
     </main>
     <Footer />
   </div>
@@ -23,6 +25,7 @@ import About from './components/About.vue';
 import TestimonialCarousel from './components/TestimonialCarousel.vue';
 import Transforms from './components/Transforms.vue';
 import TrainingPackages from './components/TrainingPackages.vue';
+import MealPlan from './components/MealPlan.vue';
 import MemberSuccess from './components/MemberSuccess.vue';
 import QuickTip from './components/QuickTip.vue';
 import Footer from './components/Footer.vue';

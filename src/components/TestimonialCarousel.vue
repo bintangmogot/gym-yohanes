@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 px-6 lg:px-30 lg:py-30 bg-bg-secondary">
+  <section class="py-20 px-6 md:px-12 lg:px-20 lg:py-30 xl:px-30 bg-bg-secondary">
     <div class="flex flex-col items-center gap-6 lg:gap-12 mx-auto max-w-7xl">
       <h2 class="text-5xl md:text-7xl text-dark-bg font-anton font-black uppercase leading-tight text-center">
         real people. real <span class="text-primary">results.</span>
@@ -42,7 +42,7 @@
           </div>
         </div>
         <!-- INDIKATOR DOTS -->
-        <div class="flex justify-center w-full py-4 gap-2">
+        <div class="flex justify-center w-full pt-4 gap-2">
           <!-- Dots Mobile -->
           <div class="flex gap-1 md:hidden">  
             <button v-for="(item, index) in testimonials" :key="'dot-m-' + index" @click="scrollToSlide(index + 1, 'm')" 

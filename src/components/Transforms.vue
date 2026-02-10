@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 px-6 lg:px-30 bg-bg-secondary" id="transforms">
+  <section class="py-20 px-6 md:px-12 lg:px-20 xl:px-30 bg-bg-secondary" id="transforms">
     <div class="flex flex-col items-center gap-12 max-w-7xl mx-auto">
       
       <!-- Header -->

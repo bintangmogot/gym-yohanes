@@ -1,7 +1,7 @@
 <template>
   <header class="absolute inset-x-0 top-0 z-50 border-b-2 border-primary">
     <!-- Navbar -->
-    <nav class="flex items-center bg-card-white justify-between py-4 px-6 md:px-12 lg:px-24" aria-label="Global">
+    <nav class="flex items-center bg-card-white justify-between py-4 px-6 md:px-12 lg:px-20 xl:px-30" aria-label="Global">
         <!-- Logo -->
         <div class="flex lg:flex-1">
           <a href="#" class="flex flex-row gap-4 -m-1.5 p-1.5 items-center">
