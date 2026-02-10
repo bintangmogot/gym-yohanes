@@ -1,8 +1,8 @@
 <template>
   <div class="bg-bg-white font-body min-h-screen overflow-x-hidden">
-    <Navbar />
+    <!-- <Navbar /> -->
     <main>
-      <Hero />
+      <!-- <Hero />
       <Hero2nd />
       <About />
       <TestimonialCarousel />
@@ -11,8 +11,9 @@
       <MealPlan />
       <Facts />
       <Location />
-      <QuickTip />
-      <MemberSuccess />
+      <CTA /> -->
+      <CatalogNutrition />
+      <Faqs />
     </main>
     <Footer />
   </div>
@@ -27,9 +28,10 @@ import TestimonialCarousel from './components/TestimonialCarousel.vue';
 import Transforms from './components/Transforms.vue';
 import TrainingPackages from './components/TrainingPackages.vue';
 import MealPlan from './components/MealPlan.vue';
-import MemberSuccess from './components/MemberSuccess.vue';
 import Facts from './components/Facts.vue'
-import QuickTip from './components/QuickTip.vue';
+import CTA from './components/CTA.vue';
+import Faqs from './components/Faqs.vue';
 import Footer from './components/Footer.vue';
 import Location from './components/Location.vue';
+import CatalogNutrition from './components/CatalogNutrition.vue';
 </script>

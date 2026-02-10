@@ -6,7 +6,7 @@
       
     <div class="max-w-7xl mx-auto py-32 sm:py-20 lg:py-32">
       <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div class="relative px-4 py-1 text-button-sm text-white ring-1 ring-white hover:ring-white/20 bg-white/15">
+        <div class="relative px-4 py-1 text-button-sm text-white ring-1 ring-white bg-white/15">
           GET IN SHAPE IN BALI 
         </div>
       </div>

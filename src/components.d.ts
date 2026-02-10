@@ -12,7 +12,10 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     About: typeof import('./components/About.vue')['default']
+    CatalogNutrition: typeof import('./components/CatalogNutrition.vue')['default']
+    CTA: typeof import('./components/CTA.vue')['default']
     Facts: typeof import('./components/Facts.vue')['default']
+    Faqs: typeof import('./components/Faqs.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Hero: typeof import('./components/Hero.vue')['default']
