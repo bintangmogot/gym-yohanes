@@ -27,6 +27,7 @@ declare module 'vue' {
     QuickTip: typeof import('./components/QuickTip.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Services: typeof import('./components/Services.vue')['default']
     TestimonialCarousel: typeof import('./components/TestimonialCarousel.vue')['default']
     TrainingPackages: typeof import('./components/TrainingPackages.vue')['default']
     Transforms: typeof import('./components/Transforms.vue')['default']

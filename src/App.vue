@@ -2,7 +2,7 @@
   <div class="bg-bg-white font-body min-h-screen overflow-x-hidden">
     <!-- <Navbar /> -->
     <main>
-      <!-- <Hero />
+      <Hero />
       <Hero2nd />
       <About />
       <TestimonialCarousel />
@@ -11,9 +11,10 @@
       <MealPlan />
       <Facts />
       <Location />
-      <CTA /> -->
+      <CTA />
       <CatalogNutrition />
       <Faqs />
+      <Services />
     </main>
     <Footer />
   </div>
@@ -34,4 +35,5 @@ import Faqs from './components/Faqs.vue';
 import Footer from './components/Footer.vue';
 import Location from './components/Location.vue';
 import CatalogNutrition from './components/CatalogNutrition.vue';
+import Services from './components/Services.vue';
 </script>

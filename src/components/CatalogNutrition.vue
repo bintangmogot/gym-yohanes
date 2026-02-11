@@ -12,9 +12,9 @@
     </div>
 
     <!-- Items -->
-    <div class="flex flex-col gap-20">
+    <div class="flex flex-col gap-20 border-2 border-primary">
       <div v-for="(item, index) in items" :key="index" 
-        class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center"
+        class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center p-5 lg:p-10"
         :class="{ 'lg:flex-row-reverse': index % 2 !== 0 }"
       >
         <!-- Content -->
@@ -47,7 +47,7 @@
         </div>
 
         <!-- Image -->
-        <div class="w-full lg:w-1/2 h-[500px] bg-gray-100 relative group overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 items-center justify-center flex">
+        <div class="w-full lg:w-1/2 h-[25 0px] sm:h-auto bg-gray-100 relative group overflow-hidden grayscale hover:grayscale-0 transition-all duration-20 items-center justify-center flex shadow-xl border-4 border-primary">
              <!-- Placeholder/Actual Image -->
             <img :src="item.image" :alt="item.title" class="w-full h-full object-cover"/>
         </div>
