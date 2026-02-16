@@ -90,9 +90,11 @@
                 </div>
             </div>
             
-            <a href="https://www.google.com/maps/search/?api=1&query=Avenue+Fitness+Canggu" target="_blank" class="mt-4 w-full text-center bg-primary text-white py-3 font-heading uppercase tracking-wider hover:bg-primary-hover transition-colors duration-300">
+            
+            <a href="https://www.google.com/maps/place/?q=place_id:ChIJO45gI5gk0i0RwBRJQ0QUZmk" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-primary text-white py-3 font-heading uppercase tracking-wider hover:bg-primary-hover transition-colors duration-300">
                 Get Directions
             </a>
+
 
         </div>
 
@@ -102,11 +104,10 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4093867375276!2d115.13083627589578!3d-8.652516691394336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2489823028e3b%3A0x69661414434914c0!2sAvenue%20Fitness%20Canggu!5e0!3m2!1sen!2sid!4v1707577882431!5m2!1sen!2sid" 
                 width="100%" 
                 height="100%" 
-                style="" 
-                allowfullscreen="true" 
+                allowfullscreen 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
-                class="lg:grayscale hover:grayscale-0 transition-all duration-700 ease-in-out block"
+                class="lg:grayscale hover:grayscale-0 transition-all duration-700 ease-in-out block border-0"
             ></iframe>
             <div class="flex flex-row w-full h-40">
                 <img src="../assets/images/gym.png" alt="Bar protein" class="w-1/2 object-cover h-full border-r-5 border-t-5 xl:border-t-8 xl:border-r-8 border-primary">
