@@ -1,5 +1,6 @@
 <template>
   <Analytics />
+  <SpeedInsights />
   <div class="bg-bg-white font-body min-h-screen overflow-x-hidden">
     <Navbar />
     <main>
@@ -34,4 +35,5 @@ transition: all 0.2s cubic-bezier(0.2, 0, 0.2, 1);}
 import Navbar from './components/Navbar.vue';
 import Footer from './components/Footer.vue';
 import { Analytics } from '@vercel/analytics/vue';
+import { SpeedInsights } from '@vercel/speed-insights/vue';
 </script>
