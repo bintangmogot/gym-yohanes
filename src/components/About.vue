@@ -8,9 +8,9 @@
         
         <!-- Foto Coach Yohan (Diletakkan di depan) -->
         <img 
-          src="/src/assets/images/profile.png" 
+          src="/src/assets/images/yohanes.webp" 
           alt="Coach Yohan" 
-          class="relative z-10 w-full h-auto object-cover shadow-2xl xl:grayscale hover:grayscale-0 transition-all duration-100 hover:scale-102"
+          class="relative z-10 w-full max-h-[400px] xl:max-h-[600px] object-bottom object-cover shadow-2xl xl:grayscale hover:grayscale-0 transition-all duration-100 hover:scale-102"
         >
       </div>
 

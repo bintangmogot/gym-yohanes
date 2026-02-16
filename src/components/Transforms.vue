@@ -181,8 +181,8 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 const transforms = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&q=80&w=600&h=1066", 
-    video: "/src/assets/images/7657367-hd_1080_1920_25fps.mp4", // Dummy YouTube Link
+    image: "/src/assets/images/test1.webp", 
+    video: "/src/assets/videos/test1.mp4", 
     headline: "Best Decision Ever",
     text: "I came to Bali feeling out of shape. 3 months with Yohan changed everything. The accountability is next level.",
     author: "Sarah J.",

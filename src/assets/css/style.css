@@ -20,7 +20,7 @@
   /* Primary */
   --color-primary: #0046DE;
   --color-primary-hover: #0037B0;
-  
+
   /* Backgrounds */
   --color-bg-white: #F9F9F9;
   /* Main background */
@@ -119,6 +119,11 @@
 /* ============================================
    BASE STYLES
    ============================================ */
+html {
+  scroll-padding-top: 80px;
+  /* Sesuaikan dengan tinggi navbar */
+}
+
 body {
   font-family: var(--font-body);
   color: var(--color-text-body);

@@ -9,7 +9,7 @@ const routes = [
     path: '/',
     name: 'Home',
     // Cara ini: Filenya baru akan didownload PAS USER KLIK linknya aja
-    component: () => import('../pages/HomePage.vue') 
+    component: () => import('../pages/HomePage.vue')
   },
   {
     path: '/food',
@@ -23,6 +23,12 @@ const router = createRouter({
   routes,
   // ⭐ Ini penting! Scroll ke atas saat pindah halaman
   scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      }
+    }
     if (savedPosition) return savedPosition
     return { top: 0 }
   }

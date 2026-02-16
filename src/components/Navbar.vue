@@ -4,11 +4,11 @@
     <nav class="flex items-center bg-card-white justify-between py-4 px-6 md:px-12 lg:px-20 xl:px-30" aria-label="Global">
         <!-- Logo -->
         <div class="flex lg:flex-1">
-          <a href="#" class="flex flex-row gap-4 -m-1.5 p-1.5 items-center">
+          <router-link :to="{name:'Home'}" class="flex flex-row gap-4 -m-1.5 p-1.5 items-center">
             <span class="sr-only">Yohanes Mogot</span>
             <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=600" alt="" />
             <p class="text-heading-2 font-anton text-dark-bg font-black">COACH <span class="text-primary">YOHAN</span></p>
-          </a>
+          </router-link>
         </div>
         
         <!-- Button Mobile Navbar -->
@@ -21,7 +21,14 @@
     
         <!-- Desktop Navbar -->
         <div class="hidden xl:flex xl:gap-x-8 items-center">
-          <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-button-sm font-heading text-dark-bg hover:text-primary">{{ item.name }}</a>
+          <router-link 
+            v-for="item in navigation" 
+            :key="item.name" 
+            :to="item.to" 
+            class="text-button-sm font-heading text-dark-bg hover:text-primary transition-colors"
+          >
+            {{ item.name }}
+          </router-link>
           <a href="#programs" class="bg-primary px-6 py-3 text-button-sm font-heading text-white shadow-card hover:bg-primary-hover transition-all">BOOK NOW</a>
         </div>
     </nav>
@@ -31,10 +38,10 @@
       <div class="fixed inset-0 z-50"></div>
       <DialogPanel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-bg-white p-8 sm:max-w-sm sm:ring-1 sm:ring-text-dark/10">
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
+          <router-link to="/" class="-m-1.5 p-1.5" @click="mobileMenuOpen = false">
             <span class="sr-only">Your Company</span>
             <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=600" alt="" />
-          </a>
+          </router-link>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-text-body" @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span>
             <XMarkIcon class="size-6" aria-hidden="true" />
@@ -43,7 +50,15 @@
         <div class="mt-8 flow-root">
           <div class="-my-6 divide-y divide-line/10">
             <div class="space-y-4 py-6">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block px-3 py-2 text-button-sm font-heading text-dark-bg hover:bg-bg-secondary">{{ item.name }}</a>
+              <router-link 
+                v-for="item in navigation" 
+                :key="item.name" 
+                :to="item.to" 
+                @click="mobileMenuOpen = false"
+                class="-mx-3 block px-3 py-2 text-button-sm font-heading text-dark-bg hover:bg-bg-secondary"
+              >
+                {{ item.name }}
+              </router-link>
             </div>
             <div class="flex py-6">
               <a href="#programs" class="w-full bg-primary px-8 py-3 text-center text-button-sm font-heading text-white shadow-card hover:bg-primary-hover transition-all">BOOK NOW</a>
@@ -61,13 +76,13 @@ import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'ABOUT', href: '#about' },
-  { name: 'GALLERY', href: '#gallery' },
-  { name: 'TRANSFORMS', href: '#transforms' },
-  { name: 'SERVICES', href: '#services'},
-  { name: 'PROGRAMS', href: '#programs' },
-  { name: 'FOOD', href: '#food' },
-  { name: 'CONSULTATION', href: '#consultation' },
+  { name: 'ABOUT', to: '/#about' },
+  { name: 'GALLERY', to: '/#gallery' },
+  { name: 'TRANSFORMS', to: '/#transforms' },
+  { name: 'SERVICES', to: '/#services'},
+  { name: 'PROGRAMS', to: '/#programs' },
+  { name: 'FOOD', to: '/food' },
+  { name: 'CONSULTATION', to: '/#consultation' },
 ]
 
 const mobileMenuOpen = ref(false)
