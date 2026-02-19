@@ -4,8 +4,8 @@
             <div class="flex flex-row items-start justify-between w-full">
                 <div class="flex flex-col items-start justify-start gap-4">
                     <h3 class="text-primary font-bold italic tracking-wide uppercase font-body">Fuel Your Muscle</h3>
-                    <h2 class="text-5xl md:text-6xl text-dark-bg font-anton font-black uppercase leading-tight"><span class="text-primary">Meal</span> Plan.</h2>
-                    <p class="text-body text-lg md:text-xl max-w-2xl text-gray-600">
+                    <h2 class="text-5xl md:text-6xl text-text-title font-anton font-black uppercase leading-tight"><span class="text-primary">Meal</span> Plan.</h2>
+                    <p class="text-text-body text-lg md:text-xl max-w-2xl text-text-muted">
                         The ultimate guide to staying shredded while enjoying the best food Bali has to offer.
                     </p>
                 </div>
@@ -38,16 +38,16 @@
                         </div>
                         
                         <!-- Price Badge (Moved outside overflow-hidden) -->
-                        <div class="absolute -bottom-6 right-6 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg z-10">
+                        <div class="absolute -bottom-6 right-6 w-16 h-16 bg-card-white rounded-full flex items-center justify-center shadow-lg z-10">
                             <span class="text-primary font-anton text-xl">{{ meal.price }}</span>
                         </div>
                     </div>
 
                     <!-- Content -->
-                    <div class="p-6 pt-10 flex flex-col gap-4 bg-white grow ">
+                    <div class="p-6 pt-10 flex flex-col gap-4 bg-card-white grow ">
                         <div>
-                            <h3 class="font-anton text-2xl uppercase text-dark-bg leading-tight mb-1">{{ meal.title }}</h3>
-                            <div class="flex items-center gap-2 text-gray-500 font-body text-sm">
+                            <h3 class="font-anton text-2xl uppercase text-text-body leading-tight mb-1">{{ meal.title }}</h3>
+                            <div class="flex items-center gap-2 text-text-muted font-body text-sm">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                                 {{ meal.description }}
                             </div>
@@ -102,7 +102,7 @@
                 
                 <!-- View All Link -->
                 <div class="flex items-center justify-center">
-                    <RouterLink :to="{name: 'Food'}" class="w-fit flex items-center gap-2 text-dark-bg font-heading text-button underline px-6 py-2 hover:text-primary hover:bg-bg-white hover:shadow-lg hover:scale-102 transition-all duration-100 -m-5 group/link">
+                    <RouterLink :to="{name: 'Food'}" class="w-fit flex items-center gap-2 text-text-title font-heading text-button underline px-6 py-2 hover:text-primary hover:bg-bg-white hover:shadow-lg hover:scale-102 transition-all duration-100 -m-5 group/link">
                        VIEW ALL MEAL PLAN.
                         <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </RouterLink>

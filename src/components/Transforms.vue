@@ -4,7 +4,7 @@
       
       <!-- Header -->
       <div class="flex flex-col items-center gap-4 text-center">
-        <h2 class="text-5xl md:text-7xl text-dark-bg font-anton font-black uppercase leading-tight">
+        <h2 class="text-5xl md:text-7xl text-text-title font-anton font-black uppercase leading-tight">
           The <span class="text-primary">Transforms.</span>
         </h2>
         <p class="text-md md:text-lg text-text-body font-body font-normal leading-relaxed max-w-2xl">
@@ -52,7 +52,7 @@
           <div 
             v-for="(item, index) in displayedItems" 
             :key="item.id" 
-            class="min-w-[85%] md:min-w-0 snap-center flex flex-col bg-white shadow-card hover:shadow-card-hover transition-all duration-300 group cursor-pointer border-l-4 md:border-l-6 border-primary xl:border-primary/50 xl:hover:border-primary h-full animate-fade-in"
+            class="min-w-[85%] md:min-w-0 snap-center flex flex-col bg-card-white shadow-card hover:shadow-card-hover transition-all duration-300 group cursor-pointer border-l-4 md:border-l-6 border-primary xl:border-primary/50 xl:hover:border-primary h-full animate-fade-in"
             @click="openVideo(item.video)"
           >
             
@@ -78,7 +78,7 @@
               </div>
 
               <!-- Quote Headline -->
-              <h3 class="font-anton text-2xl uppercase text-dark-bg leading-tight">
+              <h3 class="font-anton text-2xl uppercase text-text-body leading-tight">
                 "{{ item.headline }}"
               </h3>
 
@@ -88,9 +88,9 @@
               </p>
 
               <!-- Author -->
-              <div class="pt-4 border-t border-gray-100">
-                <p class="font-heading text-dark-bg text-lg tracking-wide uppercase">
-                  - {{ item.author }}, <span class="text-gray-400">{{ item.role }}</span>
+              <div class="pt-4 border-t border-primary/20">
+                <p class="font-heading text-text-body text-lg tracking-wide uppercase">
+                  - {{ item.author }}, <span class="text-text-muted">{{ item.role }}</span>
                 </p>
               </div>
             </div>

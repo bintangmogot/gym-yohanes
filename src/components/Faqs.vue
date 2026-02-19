@@ -1,12 +1,12 @@
 <template>
     <section class="bg-bg-white py-20 px-6 lg:px-20 xl:px-32 relative overflow-hidden" id="faqs">
     <div class="flex flex-col gap-4 lg:gap-10">
-        <h2 class="text-5xl md:text-7xl lg:text-8xl font-anton uppercase leading-[0.9] text-dark-bg text-center">
+        <h2 class="text-5xl md:text-7xl lg:text-8xl font-anton uppercase leading-[0.9] text-text-title text-center">
             FAQS.
         </h2>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <div v-for="(faq, index) in faqs" :key="index" 
-                class="collapse collapse-arrow bg-base-100 border border-t-4 border-primary mx-auto rounded-none"
+                class="collapse collapse-arrow bg-card-white border border-t-4 border-primary mx-auto rounded-none"
                 :class="{ 'collapse-open': activeIndex === index }"
                 @click="toggle(index)"
             >

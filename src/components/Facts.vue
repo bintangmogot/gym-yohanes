@@ -8,23 +8,23 @@
           </svg>
         </div>
         <div>
-          <h4 class="font-title text-5xl uppercase text-dark-bg leading-none">THE <span class="text-primary">FACTS.</span></h4>
-          <p class="text-body text-gray-500 mt-2 text-lg">Why over 500+ members choose us for their transformation.</p>
+          <h4 class="font-title text-5xl uppercase text-text-title leading-none">THE <span class="text-primary">FACTS.</span></h4>
+          <p class="text-body text-text-muted mt-2 text-lg">Why over 500+ members choose us for their transformation.</p>
         </div>
       </div>
 
       <!-- Facts Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div v-for="(fact, index) in facts" :key="index" 
-             class="group flex flex-col bg-white border border-l-4 border-primary lg:border-gray-300 hover:border-primary  p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full">
+             class="group flex flex-col bg-card-white border border-l-4 border-primary lg:border-white/10 hover:border-primary  p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full">
             
             <div class="w-12 h-12 md:w-14 md:h-14 mb-4 rounded-none flex items-center justify-center text-primary shrink-0 bg-blue-50 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                 <component :is="fact.icon" class="w-8 h-8 xl:w-10 xl:h-10" />
             </div>
             
             <div>
-                <h4 class="font-anton text-2xl uppercase text-dark-bg mb-2 group-hover:text-primary transition-colors duration-300">{{ fact.title }}</h4>
-                <p class="text-body text-gray-600 text-sm leading-relaxed">{{ fact.description }}</p>
+                <h4 class="font-anton text-2xl uppercase text-text-body mb-2 group-hover:text-primary transition-colors duration-300">{{ fact.title }}</h4>
+                <p class="text-body text-text-muted text-sm leading-relaxed">{{ fact.description }}</p>
             </div>
         </div>
       </div>

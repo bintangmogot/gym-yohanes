@@ -10,10 +10,10 @@
       
       <!-- Header -->
       <div class="flex flex-col items-center gap-4 text-center">
-        <h2 class="text-5xl md:text-7xl text-dark-bg font-anton font-black uppercase leading-tight">
+        <h2 class="text-5xl md:text-7xl text-text-title font-anton font-black uppercase leading-tight">
           Train <span class="text-primary">With Me.</span>
         </h2>
-        <p class="text-md md:text-lg text-gray-600 font-body font-normal leading-relaxed max-w-2xl">
+        <p class="text-md md:text-lg text-text-muted font-body font-normal leading-relaxed max-w-2xl">
           Join me at Bali’s premier fitness destination. State-of-the-art equipment in the heart of Canggu.
         </p>
       </div>
@@ -22,13 +22,13 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full items-stretch">
         
         <!-- Left: Details Card -->
-        <div class="bg-white p-8 md:p-12 border-l-4 border-primary shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-center gap-8">
+        <div class="bg-card-white p-8 md:p-12 border-l-4 border-primary shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-center gap-8">
             
             <!-- Gym Identity -->
             <div>
                 <div class="inline-block bg-blue-50 text-primary px-3 py-1 text-sm font-bold uppercase tracking-wider mb-2">Premium Facility</div>
-                <h3 class="text-4xl font-anton uppercase text-dark-bg leading-none">AVENUE FITNESS CANGGU</h3>
-                <p class="text-gray-500 mt-2">The most complete weight training facility in the area.</p>
+                <h3 class="text-4xl font-anton uppercase text-text-title leading-none">AVENUE FITNESS CANGGU</h3>
+                <p class="text-text-muted mt-2">The most complete weight training facility in the area.</p>
             </div>
 
             <hr class="border-gray-100">
@@ -41,12 +41,12 @@
                         <div class="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-primary shrink-0">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                         </div>
-                        <h4 class="sm:hidden font-bold text-dark-bg uppercase tracking-wide text-md font-heading mb-1">ADDRESS</h4>
+                        <h4 class="sm:hidden font-bold text-text-body uppercase tracking-wide text-md font-heading mb-1">ADDRESS</h4>
                     </div>
 
                     <div>
-                        <h4 class="hidden sm:block font-bold text-dark-bg uppercase tracking-wide text-md font-heading mb-1">ADDRESS</h4>
-                        <p class="text-gray-600 leading-relaxed">Jl. Pantai Batu Bolong No.55, Canggu, North Kuta, Badung Regency, Bali 80351, Indonesia</p>
+                        <h4 class="hidden sm:block font-bold text-text-body uppercase tracking-wide text-md font-heading mb-1">ADDRESS</h4>
+                        <p class="text-text-muted leading-relaxed">Jl. Pantai Batu Bolong No.55, Canggu, North Kuta, Badung Regency, Bali 80351, Indonesia</p>
                     </div>
                 </div>
 
@@ -56,11 +56,11 @@
                         <div class="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-primary shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         </div>
-                        <h4 class="sm:hidden font-bold text-dark-bg uppercase tracking-wide text-md font-heading mb-1">OPENING HOURS</h4>
+                        <h4 class="sm:hidden font-bold text-text-body uppercase tracking-wide text-md font-heading mb-1">OPENING HOURS</h4>
                     </div>
                     <div>
-                        <h4 class="hidden sm:block font-bold text-dark-bg uppercase tracking-wide text-md font-heading mb-1">OPENING HOURS</h4>
-                        <div class="grid grid-cols-[80px_1fr] gap-x-4 text-gray-600">
+                        <h4 class="hidden sm:block font-bold text-text-body uppercase tracking-wide text-md font-heading mb-1">OPENING HOURS</h4>
+                        <div class="grid grid-cols-[80px_1fr] gap-x-4 text-text-muted">
                             <span class="font-medium">Mon - Sat</span>
                             <span>06:00 AM - 10:00 PM</span>
                             <span class="font-medium">Sunday</span>
@@ -75,11 +75,11 @@
                         <div class="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-primary shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </div>
-                        <h4 class="sm:hidden font-bold text-dark-bg uppercase tracking-wide text-md font-heading mb-1">FACILITIES include</h4>
+                        <h4 class="sm:hidden font-bold text-text-body uppercase tracking-wide text-md font-heading mb-1">FACILITIES include</h4>
                     </div>
                     <div>
-                        <h4 class="hidden sm:block font-bold text-dark-bg uppercase tracking-wide text-md font-heading mb-1">FACILITIES include</h4>
-                        <p class="text-gray-600 leading-relaxed text-sm">
+                        <h4 class="hidden sm:block font-bold text-text-body uppercase tracking-wide text-md font-heading mb-1">FACILITIES include</h4>
+                        <p class="text-text-muted leading-relaxed text-sm">
                             <span class="inline-block bg-gray-100 px-2 py-1 rounded mr-2 mb-2">Technogym Equipment</span>
                             <span class="inline-block bg-gray-100 px-2 py-1 rounded mr-2 mb-2">Recovery Sauna</span>
                             <span class="inline-block bg-gray-100 px-2 py-1 rounded mr-2 mb-2">Protein Bar</span>

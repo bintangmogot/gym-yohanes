@@ -12,8 +12,8 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-title uppercase text-2xl">Personal Training</h3>
-                    <p class="text-text-body-2 font-body text-md group-hover:text-bg-white transition-all duration-100">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
+                    <h3 class="text-white font-title uppercase text-2xl z-1">Personal Training</h3>
+                    <p class="text-gray-400 font-body text-md group-hover:text-white transition-all duration-100 z-2">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
                 <div class="flex items-center justify-start">
                     <a href="#" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-white hover:scale-102 transition-all duration-100 group/link">
                        DETAILS
@@ -22,7 +22,7 @@
                 </div>
                 </div>
                 <div class="absolute top-0 right-5">
-                    <h5 class="font-title text-[200px]  uppercase text-primary/15 group-hover:text-primary/50 transition-all duration-100">1</h5>
+                    <h5 class="font-title text-[200px]  uppercase text-primary/15 group-hover:text-primary/50 transition-all duration-100 z-0">1</h5>
                 </div>
             </div>
             <div class="flex flex-col gap-8 group relative min-w-[280px]">
@@ -32,8 +32,8 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-title uppercase text-2xl">Personal Training</h3>
-                    <p class="text-text-body-2 font-body text-md group-hover:text-bg-white transition-all duration-100">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
+                    <h3 class="text-white font-title uppercase text-2xl z-1">Personal Training</h3>
+                    <p class="text-text-body-2 font-body text-md group-hover:text-bg-white transition-all duration-100 z-2">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
                 <div class="flex items-center justify-start">
                     <a href="#" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-white hover:scale-102 transition-all duration-100 group/link">
                        DETAILS
@@ -41,7 +41,7 @@
                     </a>
                 </div>
                 </div>
-                <div class="absolute top-0 right-5">
+                <div class="absolute top-0 right-5 z-0">
                     <h5 class="font-title text-[200px]  uppercase text-primary/15 group-hover:text-primary/50 transition-all duration-100">2</h5>
                 </div>
             </div>
@@ -52,8 +52,8 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-title uppercase text-2xl">Personal Training</h3>
-                    <p class="text-text-body-2 font-body text-md group-hover:text-bg-white transition-all duration-100">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
+                    <h3 class="text-white font-title uppercase text-2xl z-1">Personal Training</h3>
+                    <p class="text-text-body-2 font-body text-md group-hover:text-bg-white transition-all duration-100 z-2">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
                 <div class="flex items-center justify-start">
                     <a href="#" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-white hover:scale-102 transition-all duration-100 group/link">
                        DETAILS
@@ -62,7 +62,7 @@
                 </div>
                 </div>
                 <div class="absolute top-0 right-5">
-                    <h5 class="font-title text-[200px]  uppercase text-primary/15 group-hover:text-primary/50 transition-all duration-100">3</h5>
+                    <h5 class="font-title text-[200px] uppercase text-primary/15 group-hover:text-primary/50 transition-all duration-100 z-0">3</h5>
                 </div>
             </div>
         </div>

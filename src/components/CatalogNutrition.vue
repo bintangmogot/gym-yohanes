@@ -23,10 +23,10 @@
     <!-- Header -->
     <div class="mb-16 border-l-8 border-primary pl-6 md:pl-10">
       <span class="bg-blue-100 text-primary text-xs font-bold px-3 py-1 uppercase tracking-wider mb-4 inline-block">NUTRITION PLAN</span>
-      <h2 class="text-5xl md:text-7xl lg:text-8xl font-anton uppercase leading-[0.9] text-dark-bg mb-6">
+      <h2 class="text-5xl md:text-7xl lg:text-8xl font-anton uppercase leading-[0.9] text-text-title mb-6">
         CATALOG & <span class="text-primary">NUTRITION.</span>
       </h2>
-      <p class="text-body text-lg md:text-xl text-gray-600 max-w-2xl">
+      <p class="text-body text-lg md:text-xl text-text-muted max-w-2xl">
         High-grade protein designed for optimal muscle recovery immediately post-workout. Sourced locally in Bali to ensure freshness. Available in Rich Chocolate & French Vanilla.
       </p>
     </div>
@@ -40,19 +40,19 @@
         <!-- Content -->
         <div class="w-full lg:w-1/2">
           <span class="bg-blue-100 text-primary text-xs font-bold px-3 py-1 uppercase tracking-wider mb-4 inline-block">NUTRITION PLAN</span>
-          <h3 class="font-anton text-4xl md:text-6xl uppercase text-dark-bg mb-2 leading-none">{{ item.title }}</h3>
+          <h3 class="font-anton text-4xl md:text-6xl uppercase text-text-title mb-2 leading-none">{{ item.title }}</h3>
           
           <div class="flex items-baseline gap-2 mb-6">
             <span class="font-anton text-5xl md:text-6xl text-primary">{{ item.price }}</span>
-            <span class="font-heading text-xl text-gray-500 uppercase">{{ item.priceSuffix }}</span>
+            <span class="font-heading text-xl text-text-muted uppercase">{{ item.priceSuffix }}</span>
           </div>
 
-          <p class="text-body text-gray-600 mb-8 leading-relaxed">
+          <p class="text-body text-text-muted mb-8 leading-relaxed">
             {{ item.description }}
           </p>
 
           <ul class="flex flex-col gap-3 mb-10">
-            <li v-for="(feature, fIndex) in item.features" :key="fIndex" class="flex items-center gap-3 text-body font-medium text-gray-700">
+            <li v-for="(feature, fIndex) in item.features" :key="fIndex" class="flex items-center gap-3 text-body font-medium text-text-muted">
                <div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center shrink-0">
                  <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
                </div>

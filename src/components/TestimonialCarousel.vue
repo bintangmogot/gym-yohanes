@@ -1,11 +1,11 @@
 <template>
   <section class="py-20 px-6 md:px-12 lg:px-20 lg:py-30 xl:px-30 bg-bg-secondary">
     <div class="flex flex-col items-center gap-6 lg:gap-12 mx-auto max-w-7xl">
-      <h2 class="text-5xl md:text-7xl text-dark-bg font-anton font-black uppercase leading-tight text-center">
+      <h2 class="text-5xl md:text-7xl text-text-title font-anton font-black uppercase leading-tight text-center">
         real people. real <span class="text-primary">results.</span>
       </h2>
 
-      <div class="w-full bg-none shadow-none md:shadow-xl md:bg-white md:py-10 xl:py-20">
+      <div class="w-full bg-none shadow-none md:shadow-xl md:bg-card-white md:py-10 xl:py-20">
         <!-- ========================================== -->
         <!-- VERSI MOBILE -->
         <!-- ========================================== -->
@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <a href="#" class="w-fit flex items-center gap-2 text-dark-bg font-heading text-button underline px-6 py-2 hover:text-primary hover:bg-bg-white hover:shadow-xs hover:scale-102 transition-all duration-100 -m-5 group/link">
+      <a href="#" class="w-fit flex items-center gap-2 text-text-title font-heading text-button underline px-6 py-2 hover:text-primary hover:bg-bg-white hover:shadow-xs hover:scale-102 transition-all duration-100 -m-5 group/link">
         View All Transformations.
         <ArrowRightIcon class="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
       </a>

@@ -60,7 +60,7 @@
             <div class="flex flex-col items-center gap-12">
                 <!-- Header -->
                 <div class="flex flex-col items-center gap-4 text-center">
-                    <h2 class="text-5xl md:text-7xl text-dark-bg font-anton font-black uppercase leading-tight">
+                    <h2 class="text-5xl md:text-7xl text-text-title font-anton font-black uppercase leading-tight">
                         The <span class="text-primary">Gallery.</span>
                     </h2>
                     <p class="text-md md:text-lg text-text-body font-body font-normal leading-relaxed max-w-2xl">

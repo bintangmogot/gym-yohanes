@@ -17,7 +17,7 @@
       <!-- Right: Content -->
       <div class="flex flex-col items-start">
         <h3 class="text-primary font-bold italic tracking-wide uppercase mb-2 font-body">The Coach</h3>
-        <h2 class="text-5xl md:text-6xl text-dark-bg font-anton font-black uppercase mb-4 leading-tight">meet yohan</h2>
+        <h2 class="text-5xl md:text-6xl text-text-title font-anton font-black uppercase mb-4 leading-tight">meet yohan</h2>
         <div class="w-16 h-1.5 bg-primary mb-8"></div>
         
         <p class="text-text-body font-body mb-6 leading-relaxed">Welcome to the next level of fitness. I am Yohan, a dedicated personal trainer based in the heart of Bali. My mission is simple: to help you achieve the physique and health you've always desired without sacrificing the lifestyle you love.</p>
@@ -26,29 +26,29 @@
         <!-- Features Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
           <!-- Feature 1 -->
-          <div class="flex items-center gap-4 bg-white p-4 border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
-              <CheckBadgeIcon class="w-8 h-8 text-dark-bg shrink-0" />
+          <div class="flex items-center gap-4 bg-card-white p-4 border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+              <CheckBadgeIcon class="w-8 h-8 text-text-body shrink-0" />
               <div>
-                <h4 class="font-anton uppercase text-lg text-dark-bg">Ade Rai Certified</h4>
-                <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Elite Certification</p>
+                <h4 class="font-anton uppercase text-lg text-text-body">Ade Rai Certified</h4>
+                <p class="text-xs text-text-muted uppercase tracking-wider font-semibold">Elite Certification</p>
               </div>
           </div>
           
           <!-- Feature 2 -->
-          <div class="flex items-center gap-4 bg-white p-4 border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
-              <UserGroupIcon class="w-8 h-8 text-dark-bg shrink-0" />
+          <div class="flex items-center gap-4 bg-card-white p-4 border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+              <UserGroupIcon class="w-8 h-8 text-text-body shrink-0" />
               <div>
-                <h4 class="font-anton uppercase text-lg text-dark-bg">10+ Transformation</h4>
-                <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Proven Results</p>
+                <h4 class="font-anton uppercase text-lg text-text-body">10+ Transformation</h4>
+                <p class="text-xs text-text-muted uppercase tracking-wider font-semibold">Proven Results</p>
               </div>
           </div>
 
           <!-- Feature 3 -->
-          <div class="flex items-center gap-4 bg-white p-4 border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
-              <HomeModernIcon class="w-8 h-8 text-dark-bg shrink-0" />
+          <div class="flex items-center gap-4 bg-card-white p-4 border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+              <HomeModernIcon class="w-8 h-8 text-text-body shrink-0" />
               <div>
-                <h4 class="font-anton uppercase text-lg text-dark-bg">Private Gym Access</h4>
-                <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Premium Facilities</p>
+                <h4 class="font-anton uppercase text-lg text-text-body">Private Gym Access</h4>
+                <p class="text-xs text-text-muted uppercase tracking-wider font-semibold">Premium Facilities</p>
               </div>
           </div>
 

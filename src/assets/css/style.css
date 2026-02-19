@@ -8,7 +8,72 @@
 
 /* 2. Import Tailwind v4 */
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui"{
+  themes: all; 
+}
+@plugin "daisyui/theme"{
+  name: "light";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  /* Primary */
+  --color-primary: #0046DE;
+  --color-primary-hover: #0037B0;
+
+  /* Dynamic Backgrounds & Cards */
+  --color-bg-white: #F9F9F9;
+  --color-bg-secondary: #F0F4F8;
+  --color-card-white: #FFFFFF;
+  
+  /* Dynamic Text */
+  --color-text-title: #0f0f23;
+  --color-text-body: #475569;
+  --color-text-muted: #64748B;
+  --color-text-body-2: #94A3B8;
+
+  /* Standard DaisyUI Vars */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme"{
+  name: "dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: dark;
+
+  /* Primary (Lighter Blue for Dark Mode) */
+  --color-primary: #3B82F6;
+  --color-primary-hover: #60A5FA;
+
+  /* Dynamic Backgrounds & Cards (Dark Mode) */
+  --color-bg-white: #0F0F23;
+  --color-bg-secondary: #171736;
+  --color-card-white: #1E1E45;
+
+  /* Dynamic Text (Light Text for Dark Mode) */
+  --color-text-title: #f9f9f9;
+  --color-text-body: #E2E8F0;
+  --color-text-muted: #94A3B8;
+  --color-text-body-2: #64748B;
+
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
 
 /* ============================================
    CSS VARIABLES (Custom Properties)
@@ -17,32 +82,28 @@
 @theme {
   /* === COLORS (Must start with --color-) === */
 
-  /* Primary */
-  --color-primary: #0046DE;
-  --color-primary-hover: #0037B0;
 
-  /* Backgrounds */
-  --color-bg-white: #F9F9F9;
-  /* Main background */
-  /* Main background */
-  --color-bg-secondary: #F0F4F8;
-  /* Secondary background: Cool Blue-Grey */
-  --color-card-white: #FFFFFF;
-  /* White cards */
-
-  /* Dark Theme */
+  /* === STATIC COLORS (Available in ALL themes) === */
+  
+  /* Dark Navy Background (Specific design color, kept constant) */
   --color-dark-bg: #0F0F23;
-  /* Main dark background (Not #000000) */
+  
+  /* Dark Card Color (Specific design color, kept constant) */
   --color-card-dark: #171736;
-  /* Dark cards */
 
+  /* === DYNAMIC COLORS (Mapped from Theme Plugins) === */
+  /* These variables change value based on the active theme (light/dark) */
+  
+  /* Backgrounds */
+  --color-bg-white: var(--color-bg-white);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-card-white: var(--color-card-white);
+  
   /* Text */
-  --color-text-body: #475569;
-  /* Paragraph text: Slate-600 */
-  --color-text-muted: #64748B;
-  /* Slate-500 */
-  --color-text-body-2: #94A3B8;
-  /* Slate-400 */
+  --color-text-body: var(--color-text-body);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-body-2: var(--color-text-body-2);
+  --color-text-title: var(--color-text-title);
   /* Accents */
   --color-hover-light: #EFF6FF;
   --color-line: #C2D8F4;
