@@ -74,16 +74,12 @@
   --noise: 0;
 }
 
-
 /* ============================================
    CSS VARIABLES (Custom Properties)
    ============================================ */
 /* 3. Define Theme Variables */
 @theme {
-  /* === COLORS (Must start with --color-) === */
 
-
-  /* === STATIC COLORS (Available in ALL themes) === */
   
   /* Dark Navy Background (Specific design color, kept constant) */
   --color-dark-bg: #0F0F23;

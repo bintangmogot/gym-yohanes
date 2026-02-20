@@ -110,8 +110,8 @@
                 class="lg:grayscale hover:grayscale-0 transition-all duration-700 ease-in-out block border-0"
             ></iframe>
             <div class="flex flex-row w-full h-40">
-                <img src="../assets/images/gym.png" alt="Bar protein" class="w-1/2 object-cover h-full border-r-5 border-t-5 xl:border-t-8 xl:border-r-8 border-primary">
-                <img src="../assets/images/gym2.png" alt="Legs Floor" class="w-1/2 object-cover h-full border-t-5 xl:border-t-8 border-primary">
+                <img src="https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/gym" alt="Bar protein" class="w-1/2 object-cover h-full border-r-5 border-t-5 xl:border-t-8 xl:border-r-8 border-primary">
+                <img src="https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/gym2" alt="Legs Floor" class="w-1/2 object-cover h-full border-t-5 xl:border-t-8 border-primary">
             </div>
         </div>
 

@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 lg:py-30 md:px-12 lg:px-20 xl:px-30 bg-dark-bg">
     
-    <div class="py-32 sm:py-20 lg:py-32 px-6 md:px-12 lg:px-20 xl:px-30 bg-[url('/src/assets/images/hero.png')] bg-cover bg-center bg-no-repeat">
+    <div class="py-32 sm:py-20 lg:py-32 px-6 md:px-12 lg:px-20 xl:px-30 bg-[url('https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/hero')] bg-cover bg-center bg-no-repeat">
       <div class="hidden sm:mb-8 sm:flex sm:justify-center">
         <div class="relative px-4 py-1 text-button-sm text-white ring-1 ring-white bg-white/15">
           GET IN SHAPE IN BALI 

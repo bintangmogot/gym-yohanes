@@ -181,8 +181,8 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 const transforms = [
   {
     id: 1,
-    image: "/src/assets/images/test1.webp", 
-    video: "/src/assets/videos/test1.mp4", 
+    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/test1", 
+    video: "https://res.cloudinary.com/workstation-/video/upload/q_auto,w_1280/gym-yohanes/videos/test1", 
     headline: "Best Decision Ever",
     text: "I came to Bali feeling out of shape. 3 months with Yohan changed everything. The accountability is next level.",
     author: "Sarah J.",

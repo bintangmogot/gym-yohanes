@@ -9,7 +9,7 @@
             
             <!-- Foto Coach -->
             <img 
-              src="/src/assets/images/profile.png" 
+              src="https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/profile" 
               alt="Coach Yohan" 
               class="relative z-10 w-full aspect-4/5 lg:aspect-auto lg:h-full object-cover lg:object-center shadow-2xl lg:shadow-none transition-all duration-500 max-h-[500px] md:max-h-[650px] lg:max-h-none"
             >
