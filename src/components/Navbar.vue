@@ -1,5 +1,5 @@
 <template>
-  <header class="absolute inset-x-0 top-0 z-50 border-b-2 border-primary">
+  <header class="fixed inset-x-0 top-0 z-50 border-b-2 border-primary">
     <!-- Navbar -->
     <nav class="flex items-center bg-base-100 justify-between py-4 px-6 md:px-12 lg:px-20 xl:px-30" aria-label="Global">
         <!-- Logo -->

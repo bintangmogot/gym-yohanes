@@ -9,7 +9,7 @@
             <p class="text-heading-2 font-anton text-white font-black">COACH <span class="text-primary">YOHANES</span></p>
           </router-link>
         </div>
-      <p class="flex flex-1 order-3 md:hidden lg:block md:order-2 text-base-100 font-body text-sm text-center">&copy; 2026 Coach Yohanes Mogot. All Rights Reserved.</p>
+      <p class="flex flex-1 order-3 md:hidden lg:block md:order-2 text-base-100/70 font-body text-sm text-center">&copy; 2026 Coach Yohanes Mogot. All Rights Reserved.</p>
 
    <!-- Footer Socials -->
       <div class="flex flex-row flex-1 order-2 md:order-3 items-center gap-4 sm:gap-6 text-white/90 justify-end">
@@ -30,7 +30,7 @@
         </div>
       </div>
     </div>
-    <p class="hidden md:block lg:hidden text-base-100 font-body text-sm text-center">&copy; 2026 Coach Yohanes Mogot. All Rights Reserved.</p>
+    <p class="hidden md:block lg:hidden text-base-100/70 font-body text-sm text-center">&copy; 2026 Coach Yohanes Mogot. All Rights Reserved.</p>
     </div>
   </footer>
 </template>

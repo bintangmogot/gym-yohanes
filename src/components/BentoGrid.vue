@@ -26,7 +26,7 @@
                     15 <span class="text-primary">Videos.</span>
                 </h2>
                 <p class="text-base-content/30 font-body text-md md:text-lg max-w-md mx-auto mb-8 leading-relaxed">
-                    12 years of training, 5 years of coaching â€” every video is real proof of dedication and transformation built alongside our members.
+                    12 years of training, 5 years of coaching, every video is real proof of dedication and transformation built alongside our members.
                 </p>
 
                 <!-- Mobile Horizontal Scroll â€” center video plays with sound -->
@@ -77,7 +77,7 @@
                         The <span class="text-primary">Gallery.</span>
                     </h2>
                     <p class="text-md md:text-lg text-base-content/80 font-body font-normal leading-relaxed max-w-2xl">
-                        12 years of training, 5 years of coaching â€” every video is real proof of dedication and transformation built alongside our members. Hover to unmute.
+                        12 years of training, 5 years of coaching, every video is real proof of dedication and transformation built alongside our members. Hover to unmute.
                     </p>
                 </div>
 
