@@ -11,7 +11,7 @@
                 </div>
                 <!-- Desktop button -->
                 <div class="hidden md:flex flex-row w-full h-full justify-end self-end">
-                     <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'd%20like%20to%20pre-order%20a%20meal%20plan.%20Can%20you%20share%20more%20details%3F" target="_blank" class="flex flex-row items-center gap-3 bg-accent px-8 py-3 text-button font-heading text-accent-content shadow-card hover:shadow-accent transition-all hover-lift">
+                     <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'd%20like%20to%20pre-order%20a%20meal%20plan.%20Can%20you%20share%20more%20details%3F" target="_blank" class="flex flex-row items-center gap-3 bg-secondary px-8 py-4 font-button italic text-secondary-content shadow-lg hover:bg-primary hover:text-primary-content hover:scale-105 transition-all duration-300">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
                     </svg>
@@ -39,7 +39,7 @@
                         
                         <!-- Price Badge (Moved outside overflow-hidden) -->
                         <div class="absolute -bottom-6 right-6 w-16 h-16 bg-primary dark:bg-base-300 rounded-full flex items-center justify-center shadow-lg z-10">
-                            <span class="text-secondary font-anton text-xl">{{ meal.price }}</span>
+                            <span class="text-white font-anton text-xl">{{ meal.price }}</span>
                         </div>
                     </div>
 
@@ -90,9 +90,8 @@
 
             </div>
 
-             <!-- Mobile button -->
              <div class="flex md:hidden flex-row w-full justify-center">
-                <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'd%20like%20to%20pre-order%20a%20meal%20plan.%20Can%20you%20share%20more%20details%3F" target="_blank" class="flex flex-row items-center gap-3 bg-accent px-8 py-3 text-button font-heading text-accent-content shadow-card hover:shadow-accent transition-all hover-lift w-full justify-center">
+                <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'd%20like%20to%20pre-order%20a%20meal%20plan.%20Can%20you%20share%20more%20details%3F" target="_blank" class="flex flex-row items-center gap-3 bg-secondary px-8 py-4 font-button italic text-secondary-content shadow-lg hover:bg-primary hover:text-primary-content hover:scale-105 transition-all duration-300 w-full justify-center">
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
                 </svg>
@@ -100,9 +99,8 @@
                     
                 </div>
                 
-                <!-- View All Link -->
                 <div class="flex items-center justify-center">
-                    <RouterLink :to="{name: 'Food'}" class="w-fit flex items-center gap-2 text-base-content font-heading text-button underline px-6 py-2 hover:text-primary hover:bg-base-100 hover:shadow-lg hover:scale-102 transition-all duration-100 -m-5 group/link">
+                    <RouterLink :to="{name: 'Food'}" class="w-fit flex items-center gap-2 text-base-content font-button italic underline px-6 py-2 hover:text-primary hover:bg-base-100 hover:shadow-lg hover:scale-105 transition-all duration-300 -m-5 group/link">
                        VIEW ALL MEAL PLAN.
                         <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </RouterLink>

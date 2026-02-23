@@ -20,9 +20,9 @@
                         <h3 class="text-neutral-content font-title uppercase text-2xl">Personal Training</h3>
                         <p class="text-neutral-content/50 font-body text-md group-hover:text-neutral-content/80 transition-all duration-200">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength.</p>
                         <div class="flex items-center justify-start">
-                            <a href="#" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-neutral-content hover:scale-102 transition-all duration-200 group/link">
+                            <a href="#" class="w-fit flex items-center gap-2 text-primary font-button italic hover:text-neutral-content hover:scale-105 transition-all duration-300 group/link text-sm">
                                DETAILS
-                                <svg class="w-5 h-5 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                <svg class="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
                     </div>
@@ -42,9 +42,9 @@
                         <h3 class="text-neutral-content font-title uppercase text-2xl">Online Coaching</h3>
                         <p class="text-neutral-content/50 font-body text-md group-hover:text-neutral-content/80 transition-all duration-200">structured remote programs with weekly check-ins, video reviews, and nutrition optimization.</p>
                         <div class="flex items-center justify-start">
-                            <a href="#" class="w-fit flex items-center gap-2 text-secondary font-heading text-button hover:text-neutral-content hover:scale-102 transition-all duration-200 group/link">
+                            <a href="#" class="w-fit flex items-center gap-2 text-secondary font-button italic hover:text-neutral-content hover:scale-105 transition-all duration-300 group/link text-sm">
                                DETAILS
-                                <svg class="w-5 h-5 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                <svg class="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
                     </div>
@@ -64,9 +64,9 @@
                         <h3 class="text-neutral-content font-title uppercase text-2xl">Meal Planning</h3>
                         <p class="text-neutral-content/50 font-body text-md group-hover:text-neutral-content/80 transition-all duration-200">personalized nutrition plans tailored to your goals, lifestyle, and food preferences.</p>
                         <div class="flex items-center justify-start">
-                            <a href="#" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-neutral-content hover:scale-102 transition-all duration-200 group/link">
+                            <a href="#" class="w-fit flex items-center gap-2 text-primary font-button italic hover:text-neutral-content hover:scale-105 transition-all duration-300 group/link text-sm">
                                DETAILS
-                                <svg class="w-5 h-5 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                <svg class="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
                     </div>

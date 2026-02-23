@@ -12,13 +12,13 @@
       </div>
       <div class="text-center">
           <!-- <mark> untuk menyoroti teks penting -->
-        <h1 class="text-5xl md:text-hero font-title tracking-tight text-white">TRAIN WITH <span class="text-primary block">YOHANES</span></h1>
+        <h1 class="text-4xl md:text-hero font-title tracking-tight text-white">TRAIN WITH <span class="text-primary block">YOHANES</span></h1>
           <p class="mt-8 text-lg font-body font-medium text-white sm:text-xl max-w-xl mx-auto">
             Transform your physique and performance with gritty, high-impact coaching. <mark class="bg-secondary text-secondary-content px-1">No excuses</mark>, just results.
           </p>
         <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
-          <a href="#programs" class="bg-secondary px-8 py-3 text-button font-heading text-secondary-content shadow-card hover:bg-secondary-focus transition-all hover-lift w-full sm:w-auto">BOOK YOUR SESSION</a>
-          <a href="#about" class="text-button font-heading text-secondary hover:text-secondary hover:bg-white  hover-lift transition-all border border-secondary px-8 py-3 w-full sm:w-auto">LEARN MORE</a>
+          <a href="#programs" class="bg-secondary px-8 py-4 font-button italic text-secondary-content shadow-lg hover:bg-primary hover:text-primary-content hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center">BOOK YOUR SESSION</a>
+          <a href="#about" class="font-button italic text-secondary hover:text-secondary-content hover:bg-secondary hover:scale-105 hover:shadow-lg transition-all duration-300 border-2 border-secondary px-8 py-4 w-full sm:w-auto text-center">LEARN MORE</a>
         </div>
       </div>
     </div>

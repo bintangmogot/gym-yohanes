@@ -17,7 +17,7 @@
       <!-- Right: Content -->
       <div class="flex flex-col items-start">
         <h3 class="text-primary font-bold italic tracking-wide uppercase mb-2 font-body">The Coach</h3>
-        <h2 class="text-5xl md:text-6xl text-base-content font-anton font-black uppercase mb-4 leading-tight">meet yohan</h2>
+        <h2 class="text-4xl md:text-6xl text-base-content font-anton font-black uppercase mb-4 leading-tight">meet yohan</h2>
         <div class="w-16 h-1.5 bg-primary mb-8"></div>
         
         <p class="text-base-content/80 font-body mb-6 leading-relaxed">Welcome to the next level of fitness. I am Yohan, a dedicated personal trainer based in the heart of Bali. My mission is simple: to help you achieve the physique and health you've always desired without sacrificing the lifestyle you love.</p>

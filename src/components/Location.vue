@@ -10,7 +10,7 @@
       
       <!-- Header -->
       <div class="flex flex-col items-center gap-4 text-center">
-        <h2 class="text-5xl md:text-7xl text-base-content font-anton font-black uppercase leading-tight">
+        <h2 class="text-4xl md:text-7xl text-base-content font-anton font-black uppercase leading-tight">
           Train <span class="text-primary">With Me.</span>
         </h2>
         <p class="text-md md:text-lg text-base-content/60 font-body font-normal leading-relaxed max-w-2xl">
@@ -91,7 +91,7 @@
             </div>
             
             
-            <a href="https://www.google.com/maps/place/?q=place_id:ChIJO45gI5gk0i0RwBRJQ0QUZmk" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-secondary text-secondary-content py-3 font-heading uppercase tracking-wider hover:bg-secondary-focus transition-colors duration-300">
+            <a href="https://www.google.com/maps/place/?q=place_id:ChIJO45gI5gk0i0RwBRJQ0QUZmk" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-secondary text-secondary-content py-4 font-button italic shadow-lg hover:bg-primary hover:text-primary-content hover:scale-105 transition-all duration-300">
                 Get Directions
             </a>
 

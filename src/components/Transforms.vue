@@ -4,11 +4,11 @@
       
       <!-- Header -->
       <div class="flex flex-col items-center gap-4 text-center">
-        <h2 class="text-5xl md:text-7xl text-base-content font-anton font-black uppercase leading-tight">
+        <h2 class="text-4xl md:text-7xl text-base-content font-anton font-black uppercase leading-tight">
           The <span class="text-primary">Transforms.</span>
         </h2>
         <p class="text-md md:text-lg text-base-content/80 font-body font-normal leading-relaxed max-w-2xl">
-          Donâ€™t just take my word for it. Hear from the people who transformed their lives in Bali.
+          Don't just take my word for it. Hear from the people who transformed their lives in Bali.
         </p>
       </div>
 
@@ -127,7 +127,7 @@
 
       <!-- CTA -->
       <div class="flex flex-col items-center mt-4">
-        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I%20want%20to%20start%20today.%20Please%20help%20me%20choose%20the%20best%20program%20for%20my%20goals.%20Thank%20you!%0AI'm%20interested%20in%20your%20program." target="_blank" class="bg-secondary px-8 py-3 text-button font-heading text-secondary-content shadow-card hover:bg-secondary-focus transition-all hover-lift w-full sm:w-auto">START YOUR JOURNEY</a>
+        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I%20want%20to%20start%20today.%20Please%20help%20me%20choose%20the%20best%20program%20for%20my%20goals.%20Thank%20you!%0AI'm%20interested%20in%20your%20program." target="_blank" class="bg-secondary px-8 py-5 font-button italic text-secondary-content shadow-lg hover:bg-primary hover:text-primary-content hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center">START YOUR JOURNEY</a>
       </div>
 
     </div>

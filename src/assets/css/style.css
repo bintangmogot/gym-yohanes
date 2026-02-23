@@ -141,19 +141,19 @@
   --font-title: 'Saira', sans-serif;
   /* atau 'Anton', sans-serif */
   --font-anton: 'Anton', sans-serif;
-  --font-heading: 'Bebas Neue', cursive;
+  --font-heading: 'Saira', sans-serif;
   --font-body: 'Saira', sans-serif;
-  --font-button: 'Bebas Neue', cursive;
+  --font-button: 'Saira', sans-serif;
 
   /* === TYPOGRAPHY SCALE (Must use --text-* prefix) === */
   /* Di CSS: --text-hero | Di HTML: class="text-hero" */
 
   /* Hero / Main Title (untuk homepage hero section) */
-  --text-hero: clamp(5rem, 6vw, 10rem);
+  --text-hero: clamp(3rem, 8vw, 10rem);
   /* 40px → 80px (responsive) */
 
   /* Headings (untuk section titles) */
-  --text-heading-1: clamp(2rem, 4vw, 3rem);
+  --text-heading-1: clamp(1.75rem, 4vw, 3rem);
   /* 32px → 48px */
   --text-heading-2: clamp(1.5rem, 3vw, 2.25rem);
   /* 24px → 36px */
@@ -175,9 +175,9 @@
   /* 12px */
 
   /* Button Text */
-  --text-button: 1.5rem;
+  --text-button: 1rem;
   /* 24px */
-  --text-button-sm: 1.25rem;
+  --text-button-sm: 0.875rem;
   /* 20px */
 
 
@@ -216,6 +216,7 @@ body {
   font-family: var(--font-body);
   color: var(--color-base-content);
   background-color: var(--color-base-100);
+  font-style: italic;
 }
 
 h1,
@@ -225,6 +226,8 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 800;
 }
 
 /* ============================================
@@ -251,7 +254,10 @@ h6 {
 
 .font-button {
   font-family: var(--font-button);
-  letter-spacing: 4%;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 /* Hover Lift Effect */
