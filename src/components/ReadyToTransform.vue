@@ -11,11 +11,11 @@
 
       <!-- Content -->
       <div class="relative z-10 flex flex-col gap-6 max-w-2xl">
-        <h2 class="text-3xl md:text-7xl  font-title italic uppercase font-black text-white leading-[0.85] tracking-tighter">
+        <h2 class="text-4xl md:text-7xl  font-title italic uppercase font-black text-white leading-[0.85] tracking-tighter">
           Ready To <br />
           Transform?
         </h2>
-        <p class="text-white/80 font-heading text-md md:text-lg lg:text-xl uppercase tracking-widest leading-none max-w-lg">
+        <p class="text-white/80 font-heading text-xs md:text-md lg:text-lg uppercase tracking-widest leading-none max-w-lg">
           Stop waiting for the "perfect time". Lets build the best version of you starting today.
         </p>
       </div>
@@ -25,13 +25,13 @@
         <a 
           href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'm%20ready%20for%20my%20transformation.%20I'd%20like%20a%20free%20consultation%20to%20start%20my%20fitness%20journey.%20When%20can%20we%20schedule%20one%3F" 
           target="_blank"
-          class="bg-white text-primary px-10 py-5 font-heading text-2xl uppercase tracking-widest flex items-center justify-center gap-4 hover:bg-base-100 hover:scale-105 active:scale-95 transition-all shadow-[0_20px_50px_rgba(255,255,255,0.1)] group/btn relative overflow-hidden"
+          class="relative w-full sm:w-auto inline-flex items-center justify-center bg-white text-primary px-8 py-4 font-button italic shadow-xl hover:bg-secondary hover:text-primary-content hover:scale-105 transition-all duration-300 group/btn overflow-hidden"
         >
-          <div class="absolute inset-0 bg-primary/5 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div>
-          <svg class="w-7 h-7 text-primary relative z-10 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="absolute inset-0 bg-primary/5 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300 group-hover/btn:bg-primary"></div>
+          <svg class="w-7 h-7 mr-2 relative z-10 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
           </svg>
-          <span class="relative z-10">Chat With Me On WhatsApp</span>
+          <span class="relative z-10 font-button">Chat With Me On WhatsApp</span>
         </a>
       </div>
     </div>

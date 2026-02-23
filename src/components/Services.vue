@@ -1,7 +1,7 @@
 <template>
     <section id="services" class="bg-neutral py-20 px-6 md:px-12 lg:px-20 xl:px-30">
         <div class="flex flex-col gap-4 md:gap-8 justify-start">
-            <h2 class="text-primary font-title italic uppercase font-black text-4xl">01. <span class="text-white">Services</span></h2>
+            <h2 class="text-primary font-anton italic uppercase font-black text-4xl">01. <span class="text-white">Services</span></h2>
 
             <hr class="w-full h-px text-primary">
 <div class="flex flex-row overflow-hidden w-full overflow-x-auto pb-8 gap-4 md:gap-8 justify-start">
@@ -15,9 +15,9 @@
                     <h3 class="text-white font-title uppercase text-2xl z-1">Personal Training</h3>
                     <p class="text-white/50 font-body text-md group-hover:text-white transition-all duration-100 z-2">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
                 <div class="flex items-center justify-start">
-                    <a href="#" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-white hover:scale-102 transition-all duration-100 group/link">
+                    <a href="#" class="w-fit flex items-center gap-2 text-primary font-button italic hover:text-white hover:scale-105 transition-all duration-300 group/link text-sm">
                        DETAILS
-                        <svg class="w-5 h-5 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>    
+                        <svg class="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>    
                     </a>
                 </div>
                 </div>
@@ -35,9 +35,9 @@
                     <h3 class="text-white font-title uppercase text-2xl z-1">Personal Training</h3>
                     <p class="text-white/50 font-body text-md group-hover:text-white transition-all duration-100 z-2">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
                 <div class="flex items-center justify-start">
-                    <a href="#" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-white hover:scale-102 transition-all duration-100 group/link">
+                    <a href="#" class="w-fit flex items-center gap-2 text-primary font-button italic hover:text-white hover:scale-105 transition-all duration-300 group/link text-sm">
                        DETAILS
-                        <svg class="w-5 h-5 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>    
+                        <svg class="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>    
                     </a>
                 </div>
                 </div>
@@ -55,9 +55,9 @@
                     <h3 class="text-white font-title uppercase text-2xl z-1">Personal Training</h3>
                     <p class="text-white/50 font-body text-md group-hover:text-white transition-all duration-100 z-2">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
                 <div class="flex items-center justify-start">
-                    <a href="#" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-white hover:scale-102 transition-all duration-100 group/link">
+                    <a href="#" class="w-fit flex items-center gap-2 text-primary font-button italic hover:text-white hover:scale-105 transition-all duration-300 group/link text-sm">
                        DETAILS
-                        <svg class="w-5 h-5 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>    
+                        <svg class="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>    
                     </a>
                 </div>
                 </div>

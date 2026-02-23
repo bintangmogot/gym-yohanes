@@ -7,7 +7,7 @@
           <router-link :to="{name:'Home'}" class="flex flex-row gap-4 -m-1.5 p-1.5 items-center">
             <span class="sr-only">Yohanes Mogot</span>
             <!-- <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=600" alt="" /> -->
-            <p class="text-heading-2 font-anton text-base-content font-black">COACH <span class="text-primary">YOHAN</span></p>
+            <p class="text-heading-2 font-anton not-italic text-base-content font-black">COACH <span class="text-primary">YOHAN</span></p>
           </router-link>
         </div>
         

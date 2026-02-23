@@ -23,15 +23,15 @@
        <div class="flex flex-col items-start gap-5 md:gap-10 max-w-xl mx-auto lg:mx-0">
           <h3 class="text-base-content font-anton font-bold text-xl md:text-[32px] tracking-[4%] uppercase">Get In Shape in Bali</h3>
           
-          <h2 class="text-8xl xl:text-9xl text-primary font-anton font-black uppercase leading-[0.85] md:leading-[0.8]">
+          <h2 class="text-5xl md:text-8xl xl:text-9xl text-primary font-anton font-black uppercase leading-[0.85] md:leading-[0.8]">
             Yohanes <br class="md:hidden lg:block"/> Mogot
           </h2>
           
           <h4 class="text-base-content/80 font-body text-xl lg:text-2xl leading-relaxed uppercase italic">Transform Your Body, Elevate Your Life</h4>
           
           <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-6 w-full mt-4">
-            <a href="#programs" class="bg-primary px-10 py-4 text-button text-center font-heading text-primary-content shadow-card hover:bg-primary-focus transition-all hover-lift w-full sm:w-auto">BOOK YOUR SESSION</a>
-            <a href="#about" class="text-button text-center font-heading text-base-content hover:text-primary-content hover:bg-primary hover-lift transition-colors border-2 border-primary hover:border-primary px-10 py-4 w-full sm:w-auto">LEARN MORE</a>
+            <a href="#programs" class="bg-primary px-10 py-5 font-button italic text-center text-primary-content shadow-lg hover:bg-secondary hover:text-secondary-content hover:scale-105 transition-all duration-300 w-full sm:w-auto">BOOK YOUR SESSION</a>
+            <a href="#about" class="font-button italic text-center text-base-content hover:text-secondary-content hover:bg-secondary hover:scale-105 hover:shadow-lg transition-all duration-300 border-2 border-primary px-10 py-5 w-full sm:w-auto">LEARN MORE</a>
           </div>
        </div>
     </div>

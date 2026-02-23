@@ -4,11 +4,11 @@
       
       <!-- Header -->
       <div class="flex flex-col items-center gap-4 text-center">
-        <h2 class="text-5xl md:text-7xl text-base-content font-anton font-black uppercase leading-tight">
+        <h2 class="text-4xl md:text-7xl text-base-content font-anton font-black uppercase leading-tight">
           The <span class="text-primary">Transforms.</span>
         </h2>
         <p class="text-md md:text-lg text-base-content/80 font-body font-normal leading-relaxed max-w-2xl">
-          Donâ€™t just take my word for it. Hear from the people who transformed their lives in Bali.
+          Dont just take my word for it. Hear from the people who transformed their lives in Bali.
         </p>
       </div>
 

@@ -12,7 +12,7 @@
       </div>
       <div class="text-center">
           <!-- <mark> untuk menyoroti teks penting -->
-        <h1 class="text-5xl md:text-hero font-title tracking-tight text-white">TRAIN WITH <span class="text-primary block">YOHANES</span></h1>
+        <h1 class="text-4xl md:text-hero font-title tracking-tight text-white">TRAIN WITH <span class="text-primary block">YOHANES</span></h1>
           <p class="mt-8 text-lg font-body font-medium text-white sm:text-xl max-w-xl mx-auto">
             Transform your physique and performance with gritty, high-impact coaching. <mark class="bg-primary text-primary-content px-1">No excuses</mark>, just results.
           </p>

@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,300..900;1,300..900&family=Anton&family=Bebas+Neue&display=swap');
 
 /* 2. Import Tailwind v4 */
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 @import "tailwindcss";
 @plugin "daisyui"{
   themes: all; 
@@ -20,7 +21,7 @@
   /* Primary */
   --color-primary: #0046DE;
   --color-primary-content: #ffffff;
-  --color-primary-focus: #0037B0;
+  --color-primary-focus: #0036AB;
 
   /* Base (Dynamic Backgrounds & Text) */
   --color-base-100: #F9F9F9;      /* Background utama halaman & card ringan */
@@ -94,41 +95,32 @@
   --color-base-200: var(--color-base-200);
   --color-base-300: var(--color-base-300);
   --color-base-content: var(--color-base-content);
+  --color-primary: var(--color-primary);
+  --color-primary-focus: var(--color-primary-focus);
+  --color-primary-content: var(--color-primary-content);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-content: var(--color-secondary-content);
 
   /* === ACCENT === */
   --color-hover-light: #EFF6FF;
   --color-line: #C2D8F4;
   --color-accent: #22D3EE;
 
-  /* === FONTS (Must start with --font-) === */
-  /* Usage: font-title, font-heading, font-body */
+  /* === FONTS === */
   --font-title: 'Saira', sans-serif;
-  /* atau 'Anton', sans-serif */
   --font-anton: 'Anton', sans-serif;
-  --font-heading: 'Bebas Neue', cursive;
+  --font-heading: 'Saira', sans-serif;
   --font-body: 'Saira', sans-serif;
-  --font-button: 'Bebas Neue', cursive;
+  --font-button: 'Saira', sans-serif;
 
-  /* === TYPOGRAPHY SCALE (Must use --text-* prefix) === */
-  /* Di CSS: --text-hero | Di HTML: class="text-hero" */
-
-  /* Hero / Main Title (untuk homepage hero section) */
-  --text-hero: clamp(5rem, 6vw, 10rem);
-  /* 40px → 80px (responsive) */
-
-  /* Headings (untuk section titles) */
-  --text-heading-1: clamp(2rem, 4vw, 3rem);
-  /* 32px → 48px */
+  /* === RESPONSIVE TYPOGRAPHY (Mobile Optimized) === */
+  --text-hero: clamp(3rem, 8vw, 7rem);
+  --text-heading-1: clamp(1.75rem, 4vw, 3rem);
   --text-heading-2: clamp(1.5rem, 3vw, 2.25rem);
-  /* 24px → 36px */
   --text-heading-3: clamp(1.25rem, 2.5vw, 1.875rem);
-  /* 20px → 30px */
   --text-heading-4: 1.125rem;
-  /* 18px (fixed) */
 
-  /* Body Text */
   --text-body: clamp(0.875rem, 1vw, 1rem);
-  /* 14px → 16px */
   --text-body-lg: clamp(1rem, 1.2vw, 1.125rem);
   /* 16px → 18px */
 
@@ -139,9 +131,9 @@
   /* 12px */
 
   /* Button Text */
-  --text-button: 1.5rem;
+  --text-button: 1rem;
   /* 24px */
-  --text-button-sm: 1.25rem;
+  --text-button-sm: 0.875rem;
   /* 20px */
 
 
@@ -177,6 +169,7 @@ body {
   font-family: var(--font-body);
   color: var(--color-base-content);
   background-color: var(--color-base-100);
+  font-style: italic;
 }
 
 h1,
@@ -186,13 +179,15 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 800;
 }
 
 /* ============================================
    CUSTOM UTILITY CLASSES
    ============================================ */
 
-/* Font Family Utilities (Tailwind v4 tidak auto-generate ini) */
+/* Font Family Utilities */
 .font-title {
   font-family: var(--font-title);
   font-weight: 900;
@@ -203,7 +198,8 @@ h6 {
 
 .font-heading {
   font-family: var(--font-heading);
-  letter-spacing: 8%;
+  font-style: italic;
+  font-weight: 800;
 }
 
 .font-body {
@@ -212,7 +208,11 @@ h6 {
 
 .font-button {
   font-family: var(--font-button);
-  letter-spacing: 4%;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
 }
 
 /* Hover Lift Effect */

@@ -10,7 +10,7 @@
                 :class="{ 'collapse-open': activeIndex === index }"
                 @click="toggle(index)"
             >
-                <div class="collapse-title font-heading font-black text-xl text-primary text-white border-b select-none">
+                <div class="collapse-title font-button italic text-md text-primary border-b select-none">
                     {{ faq.question }}
                 </div>
                 <div class="collapse-content text-sm text-primary dark:text-white">

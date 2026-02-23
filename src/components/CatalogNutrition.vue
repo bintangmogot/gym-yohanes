@@ -23,7 +23,7 @@
     <!-- Header -->
     <div class="mb-16 border-l-8 border-primary pl-6 md:pl-10">
       <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 uppercase tracking-wider mb-4 inline-block">NUTRITION PLAN</span>
-      <h2 class="text-5xl md:text-7xl lg:text-8xl font-anton uppercase leading-[0.9] text-base-content mb-6">
+      <h2 class="text-4xl md:text-6xl xl:text-7xl font-anton uppercase leading-[0.9] text-base-content mb-6">
         CATALOG & <span class="text-primary">NUTRITION.</span>
       </h2>
       <p class="text-body text-lg md:text-xl text-base-content/60 max-w-2xl">
@@ -40,7 +40,7 @@
         <!-- Content -->
         <div class="w-full lg:w-1/2">
           <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 uppercase tracking-wider mb-4 inline-block">NUTRITION PLAN</span>
-          <h3 class="font-anton text-4xl md:text-6xl uppercase text-base-content mb-2 leading-none">{{ item.title }}</h3>
+          <h3 class="font-anton text-3xl md:text-6xl uppercase text-base-content mb-2 leading-none">{{ item.title }}</h3>
           
           <div class="flex items-baseline gap-2 mb-6">
             <span class="font-anton text-5xl md:text-6xl text-primary">{{ item.price }}</span>

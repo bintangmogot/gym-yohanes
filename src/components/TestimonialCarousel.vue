@@ -26,7 +26,7 @@
         <div class="w-px h-10 bg-primary/20"></div>
         <div class="flex flex-col items-center gap-1">
           <span class="text-3xl md:text-4xl font-anton text-primary">95%</span>
-          <span class="text-xs md:text-sm font-body text-base-content/60 uppercase tracking-wider">Success Rate</span>
+          <span class="text-xs md:text-sm font-body text-base-content/60 uppercase">Success Rate</span>
         </div>
         <div class="w-px h-10 bg-primary/20"></div>
         <div class="flex flex-col items-center gap-1">
@@ -184,7 +184,7 @@
       </div>
 
       <!-- View All Link -->
-      <a href="#transforms" class="group/link w-fit flex items-center gap-2 text-base-content font-heading text-button tracking-wider px-6 py-3 border border-transparent hover:border-primary/20 hover:bg-base-100 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+      <a href="#transforms" class="group/link w-fit flex items-center gap-2 text-base-content font-heading text-button-sm hover:text-primary tracking-wider px-6 py-3 border border-transparent hover:border-primary/20 hover:bg-base-100 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 uppercase underline">
         View All Transformations
         <svg class="w-4 h-4 group-hover/link:translate-x-1.5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
       </a>

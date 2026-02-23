@@ -54,7 +54,7 @@
           </li>
         </ul>
 
-        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'm%20interested%20in%20the%20STARTER%20package%20(The%20Kickstart)%20priced%20at%207%20Million%20IDR.%20Can%20you%20tell%20me%20more%3F" target="_blank" class="block w-full border-2 border-primary text-base-content/80 text-center py-4 font-heading text-xl tracking-wider hover:bg-base-100 hover:text-primary hover:border-primary hover:shadow-lg transition-all uppercase">
+        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'm%20interested%20in%20the%20STARTER%20package%20(The%20Kickstart)%20priced%20at%207%20Million%20IDR.%20Can%20you%20tell%20me%20more%3F" target="_blank" class="block w-full border-2 border-primary text-primary text-center py-4 font-button text-button-sm italic hover:bg-primary hover:text-primary-content hover:scale-105 hover:shadow-lg transition-all duration-300 uppercase">
           Book via Whatsapp
         </a>
       </div> 
@@ -99,7 +99,7 @@
           </li>
         </ul>
 
-        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'm%20interested%20in%20the%20STARTER%20package%20(The%20Kickstart)%20priced%20at%207%20Million%20IDR.%20Could%20you%20share%20the%20program%20details%3F" target="_blank" class="block w-full border-2 border-primary text-base-content/80 text-center py-4 font-heading text-xl tracking-wider hover:bg-base-100 hover:text-primary hover:border-primary hover:shadow-lg transition-all uppercase">
+        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'm%20interested%20in%20the%20STARTER%20package%20(The%20Kickstart)%20priced%20at%207%20Million%20IDR.%20Could%20you%20share%20the%20program%20details%3F" target="_blank" class="block w-full border-2 border-primary text-primary text-center py-4 font-button text-button-sm italic hover:bg-primary hover:text-primary-content hover:border-primary hover:shadow-lg transition-all uppercase">
           Book via Whatsapp
         </a>
       </div>
@@ -147,7 +147,7 @@
           </li>
         </ul>
 
-        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I%20want%20to%20sign%20up%20for%20the%20COMMIT%20package%20(Most%20Popular)!%20I'm%20ready%20for%20a%20total%20transformation.%20When%20can%20I%20start%3F" target="_blank" class="block w-full bg-primary border-2 border-primary text-primary-content text-center py-4 font-heading text-xl tracking-wider hover:bg-primary-focus hover:border-primary-focus transition-colors uppercase shadow-lg">
+        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I%20want%20to%20sign%20up%20for%20the%20COMMIT%20package%20(Most%20Popular)!%20I'm%20ready%20for%20a%20total%20transformation.%20When%20can%20I%20start%3F" target="_blank" class="block w-full bg-primary border-2 border-primary text-primary-content text-center py-4 font-button text-button-sm italic hover:bg-primary-focus hover:border-primary-focus transition-colors uppercase shadow-lg">
           Book via Whatsapp
         </a>
       </div>
@@ -193,7 +193,7 @@
           </li>
         </ul>
 
-        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'm%20interested%20in%20the%20ELITE%20package%20(The%20Lifestyle)%20priced%20at%2015%20Million%20IDR.%20I%20want%20the%20most%20complete%20program%20for%20maximum%20results!" target="_blank" class="block w-full border-2 border-primary text-base-content/80 text-center py-4 font-heading text-xl tracking-wider hover:bg-base-100 hover:text-primary hover:border-primary hover:shadow-lg transition-all uppercase">
+        <a href="https://wa.me/6285939533337?text=Hi%20Coach%20Yohan!%20I'm%20interested%20in%20the%20ELITE%20package%20(The%20Lifestyle)%20priced%20at%2015%20Million%20IDR.%20I%20want%20the%20most%20complete%20program%20for%20maximum%20results!" target="_blank" class="block w-full border-2 border-primary text-primary text-center py-4 font-button text-button-sm italic hover:bg-primary hover:text-primary-content hover:border-primary hover:shadow-lg transition-all uppercase">
           Book via Whatsapp
         </a>
       </div>
