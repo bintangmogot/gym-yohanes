@@ -8,24 +8,24 @@
         <div class="lg:hidden relative min-h-[70vh] flex items-center justify-center">
             <!-- Background Video -->
             <div class="absolute inset-0 z-0">
-                <video
+                <!-- <video
                     class="w-full h-full object-cover"
                     autoplay muted loop playsinline
                     preload="metadata"
                     poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200"
                 >
                     <source :src="getMobileBgSrc()" type="video/mp4">
-                </video>
-                <div class="absolute inset-0 bg-neutral/85"></div>
+                </video> -->
+                <div class="absolute inset-0 bg-neutral"></div>
             </div>
 
             <!-- Overlay Content -->
             <div class="relative z-10 text-center px-6 py-20 w-full overflow-hidden">
-                <span class="text-primary font-heading tracking-[0.3em] text-sm uppercase mb-4 block">Video Gallery</span>
-                <h2 class="text-5xl md:text-7xl text-white font-anton font-black uppercase leading-tight mb-6">
+                <span class="text-primary font-heading tracking-[0.3em] text-sm uppercase mb-2 block">Video Gallery</span>
+                <h2 class="text-5xl md:text-7xl text-white font-anton font-black uppercase leading-tight mb-5">
                     15 <span class="text-primary">Videos.</span>
                 </h2>
-                <p class="text-base-content/30 font-body text-md md:text-lg max-w-md mx-auto mb-8 leading-relaxed">
+                <p class="text-primary-content/70 font-body text-md md:text-lg max-w-md mx-auto mb-8 leading-relaxed">
                     12 years of training, 5 years of coaching, every video is real proof of dedication and transformation built alongside our members.
                 </p>
 
@@ -39,7 +39,7 @@
                         <div
                             v-for="(video, index) in videos"
                             :key="index"
-                            class="snap-center shrink-0 w-full h-[500px] md:w-[240px] md:h-[320px] relative overflow-hidden group"
+                            class="snap-center snap-stop-always shrink-0 w-full h-[500px] md:w-[240px] md:h-[320px] relative overflow-hidden group"
                         >
                             <video
                                 :ref="el => { if (el) mobileVideoRefs[index] = el }"
@@ -99,7 +99,7 @@
                     <p class="text-md md:text-lg text-base-content/80 font-body font-normal leading-relaxed max-w-2xl">
                         12 years of training, 5 years of coaching, every video is real proof of dedication and transformation built alongside our members.
                     </p>
-                    <p class="text-xs text-base-content/80 font-body font-normal leading-relaxed max-w-2xl">
+                    <p class="text-xs text-base-content/80 font-body font-normal leading-relaxed max-w-2xl -mb-4">
                         *Click anywhere on the page to unlock sound on hover.
                     </p>
                 </div>
@@ -324,9 +324,19 @@ function setupMobileObserver() {
     mobileObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             const video = entry.target
+            const index = parseInt(video.dataset.mobileIndex)
+
             if (entry.isIntersecting) {
+                // Load video source if needed
                 if (video.dataset.src && !video.getAttribute('src')) {
                     video.load()
+                }
+
+                // Jika video muncul lebih dari 70% di layar, jadikan aktif
+                if (entry.intersectionRatio > 0.7) {
+                    if (activeMobileIndex.value !== index) {
+                        updateActiveMobileVideo(index)
+                    }
                 }
             } else {
                 video.pause()
@@ -334,8 +344,7 @@ function setupMobileObserver() {
         })
     }, {
         root: mobileScrollContainer.value,
-        rootMargin: '50px 0px',
-        threshold: 0.5
+        threshold: [0, 0.5, 0.7, 1.0] // Pantau beberapa titik perubahan
     })
 
     nextTick(() => {
@@ -346,47 +355,8 @@ function setupMobileObserver() {
     })
 }
 
-function onMobileScroll() {
-    clearTimeout(mobileScrollTimeout)
-    mobileScrollTimeout = setTimeout(() => {
-        if (!mobileScrollContainer.value) return
-        const container = mobileScrollContainer.value
-        const scrollLeft = container.scrollLeft
-        const maxScroll = container.scrollWidth - container.clientWidth
-        const totalVideos = mobileVideoRefs.value.filter(Boolean).length
-
-        if (scrollLeft <= 20) {
-            if (activeMobileIndex.value !== 0) updateActiveMobileVideo(0)
-            return
-        }
-
-        if (scrollLeft >= maxScroll - 20) {
-            const lastIndex = totalVideos - 1
-            if (activeMobileIndex.value !== lastIndex) updateActiveMobileVideo(lastIndex)
-            return
-        }
-
-        const containerCenter = scrollLeft + container.clientWidth / 2
-        let closestIndex = 0
-        let closestDistance = Infinity
-
-        mobileVideoRefs.value.forEach((video, index) => {
-            if (!video) return
-            const card = video.closest('.snap-center')
-            if (!card) return
-            const cardCenter = card.offsetLeft - container.offsetLeft + card.offsetWidth / 2
-            const distance = Math.abs(containerCenter - cardCenter)
-            if (distance < closestDistance) {
-                closestDistance = distance
-                closestIndex = index
-            }
-        })
-
-        if (closestIndex !== activeMobileIndex.value) {
-            updateActiveMobileVideo(closestIndex)
-        }
-    }, 50)
-}
+// onMobileScroll dihapus karena sudah dihandle oleh IntersectionObserver yang lebih smooth
+function onMobileScroll() {}
 
 function toggleGlobalMute() {
     isGlobalMuted.value = !isGlobalMuted.value
@@ -479,6 +449,10 @@ onUnmounted(() => {
 .area-v13 { grid-area: v13; }
 .area-v14 { grid-area: v14; }
 .area-v15 { grid-area: v15; }
+
+.snap-stop-always {
+    scroll-snap-stop: always;
+}
 
 /* =========================================
    CELL STYLING — Sharp Industrial
