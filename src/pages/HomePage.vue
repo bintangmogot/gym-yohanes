@@ -5,7 +5,7 @@
     <BentoGrid />
     <Transforms />
     <Services />
-    <TestimonialCarousel />
+    <ClientsCarousel />
     <TrainingPackages />
     <Location />
     <MealPlan />
@@ -24,7 +24,7 @@ import About from '../components/About.vue'
 import BentoGrid from '../components/BentoGrid.vue'
 import Transforms from '../components/Transforms.vue'
 import Services from '../components/Services.vue'
-import TestimonialCarousel from '../components/TestimonialCarousel.vue'
+import ClientsCarousel from '../components/ClientsCarousel.vue'
 import TrainingPackages from '../components/TrainingPackages.vue'
 import Location from '../components/Location.vue'
 import MealPlan from '../components/MealPlan.vue'

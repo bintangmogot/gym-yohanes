@@ -14,6 +14,8 @@ declare module 'vue' {
     About: typeof import('./components/About.vue')['default']
     BentoGrid: typeof import('./components/BentoGrid.vue')['default']
     CatalogNutrition: typeof import('./components/CatalogNutrition.vue')['default']
+    ClientsCarousel: typeof import('./components/ClientsCarousel.vue')['default']
+    ClientsPage: typeof import('./components/ClientsPage.vue')['default']
     CTA: typeof import('./components/CTA.vue')['default']
     Facts: typeof import('./components/Facts.vue')['default']
     Faqs: typeof import('./components/Faqs.vue')['default']
