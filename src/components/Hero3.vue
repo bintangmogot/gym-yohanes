@@ -285,7 +285,7 @@ function easeOut(t) {
 }
 
 const phase2 = computed(() => easeOut(subProgress(0.25, 0.55)))
-const textTranslateX = computed(() => -25 * phase2.value)
+const textTranslateX = computed(() => -32 * phase2.value)
 const textScale = computed(() => 1 - 0.45 * phase2.value)
 // Phase 2: dims slightly (1 → 0.85), Phase 3: fades out (0.85 → 0)
 const textOpacity = computed(() => {

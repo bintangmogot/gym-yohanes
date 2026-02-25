@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero3 />
-    <Hero />
+    <!-- <Hero /> -->
     <About />
     <BentoGrid />
     <Transforms />
@@ -20,7 +20,7 @@
 
 <script setup>
 import Hero3 from '../components/Hero3.vue'
-import Hero from '../components/Hero.vue'
+// import Hero from '../components/Hero.vue'
 import About from '../components/About.vue'
 import BentoGrid from '../components/BentoGrid.vue'
 import Transforms from '../components/Transforms.vue'
