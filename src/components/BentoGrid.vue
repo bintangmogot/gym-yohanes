@@ -23,7 +23,7 @@
             <div class="relative z-10 text-center px-6 py-20 w-full overflow-hidden">
                 <span class="text-primary font-heading tracking-[0.3em] text-sm uppercase mb-2 block">Video Gallery</span>
                 <h2 class="text-5xl md:text-7xl text-white font-anton font-black uppercase leading-tight mb-5">
-                    15 <span class="text-primary">Videos.</span>
+                    10 <span class="text-primary">Videos.</span>
                 </h2>
                 <p class="text-primary-content/70 font-body text-md md:text-lg max-w-md mx-auto mb-8 leading-relaxed">
                     12 years of training, 5 years of coaching, every video is real proof of dedication and transformation built alongside our members.
@@ -181,29 +181,29 @@ const cellWidths = {
     6: 350, 7: 350,
     8: 1000,
     9: 350,
-    10: 350,
-    11: 350,
-    12: 450,
-    13: 350,
-    14: 450,
+    // 10: 350,
+    // 11: 350,
+    // 12: 450,
+    // 13: 350,
+    // 14: 450,
 }
 
 const videoNames = [
     'gym-yohanes/videos/20230316_130904',
     'gym-yohanes/videos/20230320_095346',
+    'gym-yohanes/videos/test1',
     'gym-yohanes/videos/20230320_095900',
     'gym-yohanes/videos/20230318_175710',
-    'gym-yohanes/videos/20220630_165718',
-    'gym-yohanes/videos/20220630_165400',
-    'gym-yohanes/videos/20220502_124444',
-    'gym-yohanes/videos/test1',
     'gym-yohanes/videos/WORKOUT_TIPS_BY_PT_SITUPS',
+    'gym-yohanes/videos/20220630_165718',
     'gym-yohanes/videos/WORKOUT_TIPS_BY_PT_SITUPS',
     'gym-yohanes/videos/20230316_130904',
-    'gym-yohanes/videos/20230320_095346',
-    'gym-yohanes/videos/20230318_175710',
-    'gym-yohanes/videos/20220502_124444',
-    'gym-yohanes/videos/20230320_095900',
+    'gym-yohanes/videos/20220630_165400',
+    // 'gym-yohanes/videos/20220502_124444',
+    // 'gym-yohanes/videos/20230320_095346',
+    // 'gym-yohanes/videos/20230318_175710',
+    // 'gym-yohanes/videos/20220502_124444',
+    // 'gym-yohanes/videos/20230320_095900',
 ]
 
 const videoLabels = [
@@ -217,11 +217,11 @@ const videoLabels = [
     { label: 'Beach Workout',     category: 'Outdoor' },
     { label: 'Full Body Session', category: 'Workout' },
     { label: 'Gym Tour',          category: 'Facility' },
-    { label: 'Transformation #3', category: 'Before & After' },
-    { label: 'Boxing Drills',     category: 'Workout' },
-    { label: 'Recovery Day',      category: 'Wellness' },
-    { label: 'Coach Yohan',       category: 'Behind the Scenes' },
-    { label: 'Community Event',   category: 'Events' },
+    // { label: 'Transformation #3', category: 'Before & After' },
+    // { label: 'Boxing Drills',     category: 'Workout' },
+    // { label: 'Recovery Day',      category: 'Wellness' },
+    // { label: 'Coach Yohan',       category: 'Behind the Scenes' },
+    // { label: 'Community Event',   category: 'Events' },
 ]
 
 const videos = ref(videoNames.map((name, i) => ({
@@ -416,26 +416,25 @@ onUnmounted(() => {
 
 <style scoped>
 /* =========================================
-   BENTO GRID — 10 COLUMNS, 15 VIDEOS
+   BENTO GRID — 10 COLUMNS, 10 VIDEOS
    ========================================= */
 
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(6, 140px);
+    grid-template-rows: repeat(5, 140px);
     gap: 4px;
     grid-template-areas:
-        "v1  v1  v2  v2  v3  v3  v6  v4  v4  v4"
-        "v1  v1  v5  v5  v5  v5  v6  v7  v7  v7"
-        "v8  v8  v8  v9  v9  v9  v9  v10 v10 v12"
-        "v11 v11 v11 v9  v9  v9  v9  v10 v10 v12"
-        "v13 v13 v13 v13 v14 v14 v15 v15 v15 v15"
-        "v13 v13 v13 v13 v14 v14 v15 v15 v15 v15";
+        "v1  v1  v2  v2  v2  v3  v3  v4  v4  v4"
+        "v1  v1  v2  v2  v2  v3  v3  v4  v4  v4"
+        "v5  v5  v5  v6  v6  v6  v6  v7  v7  v7"
+        "v8  v8  v8  v6  v6  v6  v6  v7  v7  v7"
+        "v8  v8  v8  v9  v9  v9  v10 v10 v10 v10";
 }
 
 @media (min-width: 1280px) {
     .bento-grid {
-        grid-template-rows: repeat(6, 170px);
+        grid-template-rows: repeat(5, 170px);
     }
 }
 
@@ -449,11 +448,11 @@ onUnmounted(() => {
 .area-v8  { grid-area: v8; }
 .area-v9  { grid-area: v9; }
 .area-v10 { grid-area: v10; }
-.area-v11 { grid-area: v11; }
-.area-v12 { grid-area: v12; }
+/* .area-v11 { grid-area: v11; } */
+/* .area-v12 { grid-area: v12; }
 .area-v13 { grid-area: v13; }
 .area-v14 { grid-area: v14; }
-.area-v15 { grid-area: v15; }
+.area-v15 { grid-area: v15; } */
 
 .snap-stop-always {
     scroll-snap-stop: always;

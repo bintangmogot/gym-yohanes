@@ -76,7 +76,7 @@
         <img
           src="https://res.cloudinary.com/workstation-/image/upload/v1771686531/gym-yohanes/images/yohanes-bike"
           alt="Coach Yohanes"
-          class="w-full h-full object-cover border-10 border-white border-b-40 shadow-2xl"
+          class="w-full h-full object-cover border-10 border-white border-b-40"
         />
       </div>
 
@@ -84,7 +84,7 @@
       <div
         v-for="(photo, index) in scatteredPhotos"
         :key="index"
-        class="hero3-scattered border-4 border-white/80 border-b-20 shadow-2xl"
+        class="hero3-scattered border-4 border-white/80 border-b-20"
         :style="{
           transform: `translate(${getScatteredX(index)}vw, ${getScatteredY(index)}vh) scale(${scatteredScale}) rotate(${getScatteredRotation(index)}deg)`,
           opacity: scatteredOpacity,
@@ -96,7 +96,7 @@
         <img
           :src="photo.src"
           :alt="photo.alt"
-          class="w-full h-full object-cover shadow-2xl opacity-95"
+          class="w-full h-full object-cover opacity-95"
         />
       </div>
 
@@ -160,16 +160,16 @@ const mobileGallery = [
 // Scattered photos (used on tablet & desktop)
 const scatteredPhotos = [
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-bike',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_500/gym-yohanes/images/yohanes-bike',
     alt: 'Yohanes Bike',
-    size: 'clamp(120px, 18vw, 240px)', // Foto utama agak besar
+    size: 'clamp(120px, 18vw, 240px)',
     startX: -80, startY: -60,
     endX: -32, endY: -22,
     rotation: -15,
     z: 20,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-grassmc',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes-grassmc',
     alt: 'Grass MC',
     size: 'clamp(100px, 14vw, 200px)',
     startX: 80, startY: -80,
@@ -178,7 +178,7 @@ const scatteredPhotos = [
     z: 15,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-tripul',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes-tripul',
     alt: 'Tripul',
     size: 'clamp(110px, 15vw, 210px)',
     startX: -90, startY: 70,
@@ -187,7 +187,7 @@ const scatteredPhotos = [
     z: 25,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-legpress',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes-legpress',
     alt: 'Legpress',
     size: 'clamp(100px, 13vw, 190px)',
     startX: 90, startY: 80,
@@ -195,15 +195,15 @@ const scatteredPhotos = [
     rotation: -10,
     z: 18,
   },
-  {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-about',
-    alt: 'About',
-    size: 'clamp(90px, 12vw, 170px)',
-    startX: -100, startY: 0,
-    endX: -42, endY: -5,
-    rotation: 5,
-    z: 10,
-  },
+  // {
+  //   src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-about',
+  //   alt: 'About',
+  //   size: 'clamp(90px, 12vw, 170px)',
+  //   startX: -100, startY: 0,
+  //   endX: -42, endY: -5,
+  //   rotation: 5,
+  //   z: 10,
+  // },
   {
     src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-intigh',
     alt: 'Intigh',
@@ -214,7 +214,7 @@ const scatteredPhotos = [
     z: 12,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-tbar2',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_300/gym-yohanes/images/yohanes-tbar2',
     alt: 'T-Bar 2',
     size: 'clamp(70px, 8vw, 130px)',
     startX: 0, startY: -100,
@@ -223,7 +223,7 @@ const scatteredPhotos = [
     z: 5,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-tbar',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_300/gym-yohanes/images/yohanes-tbar',
     alt: 'T-Bar 3',
     size: 'clamp(70px, 8vw, 150px)',
     startX: 0, startY: -100,
@@ -232,7 +232,7 @@ const scatteredPhotos = [
     z: 5,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-legpress',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes-legpress',
     alt: 'Legpress 2',
     size: 'clamp(80px, 11vw, 160px)',
     startX: -40, startY: 100,
@@ -240,24 +240,24 @@ const scatteredPhotos = [
     rotation: 12,
     z: 30,
   },
-  {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-grassmc',
-    alt: 'Grass MC 2',
-    size: 'clamp(70px, 9vw, 140px)',
-    startX: 50, startY: 100,
-    endX: 20, endY: -10,
-    rotation: -8,
-    z: 22,
-  },
-  {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-tbar',
-    alt: 'T-Bar 3',
-    size: 'clamp(60px, 7vw, 120px)',
-    startX: 120, startY: 120,
-    endX: 45, endY: 12,
-    rotation: 25,
-    z: 35,
-  },
+  // {
+  //   src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-grassmc',
+  //   alt: 'Grass MC 2',
+  //   size: 'clamp(70px, 9vw, 140px)',
+  //   startX: 50, startY: 100,
+  //   endX: 20, endY: -10,
+  //   rotation: -8,
+  //   z: 22,
+  // },
+  // {
+  //   src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-tbar',
+  //   alt: 'T-Bar 3',
+  //   size: 'clamp(60px, 7vw, 120px)',
+  //   startX: 120, startY: 120,
+  //   endX: 45, endY: 12,
+  //   rotation: 25,
+  //   z: 35,
+  // },
 ]
 
 // ==================
@@ -481,7 +481,7 @@ onUnmounted(() => {
   z-index: 7;
   overflow: hidden;
   will-change: transform, opacity;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); */
 
 }
 
