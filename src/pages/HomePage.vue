@@ -1,36 +1,35 @@
 <template>
   <div>
     <Hero3 />
-    <About />
+    <AboutLayout />
     <BentoGrid />
     <Transforms />
-    <Services />
+    <CardsRowLayout />
     <ClientsCarousel />
     <TrainingPackages />
     <Location />
     <MealPlan />
     <Facts />
-    <ReadyToTransform />
+    <BannerLayout />
     <CatalogNutrition />
     <Faqs />
-    <CTA />
+    <CTALayout />
   </div>
 </template>
 
 <script setup>
 import Hero3 from '../components/Hero3.vue'
-// import Hero from '../components/Hero.vue'
-import About from '../components/About.vue'
+import AboutLayout from '../components/layout/AboutLayout.vue'
 import BentoGrid from '../components/BentoGrid.vue'
 import Transforms from '../components/Transforms.vue'
-import Services from '../components/Services.vue'
+import CardsRowLayout from '../components/layout/CardsRowLayout.vue'
 import ClientsCarousel from '../components/ClientsCarousel.vue'
 import TrainingPackages from '../components/TrainingPackages.vue'
 import Location from '../components/Location.vue'
 import MealPlan from '../components/MealPlan.vue'
 import Facts from '../components/Facts.vue'
-import ReadyToTransform from '../components/ReadyToTransform.vue'
+import BannerLayout from '../components/layout/BannerLayout.vue'
 import CatalogNutrition from '../components/CatalogNutrition.vue'
 import Faqs from '../components/Faqs.vue'
-import CTA from '../components/CTA.vue'
+import CTALayout from '../components/layout/CTALayout.vue'
 </script>

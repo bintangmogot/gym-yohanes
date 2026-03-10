@@ -15,10 +15,10 @@
                     <h3 class="text-white font-title uppercase text-2xl z-1">Personal Training</h3>
                     <p class="text-white/50 font-body text-md group-hover:text-white transition-all duration-100 z-2">one-on-one customized sessions in Bali focusing on technique, hypertrophy, and strength. </p>
                 <div class="flex items-center justify-start">
-                    <a href="#" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-white hover:scale-102 transition-all duration-100 group/link">
+                    <router-link :to ="{name: 'Service'}" class="w-fit flex items-center gap-2 text-primary font-heading text-button hover:text-white hover:scale-102 transition-all duration-100 group/link">
                        DETAILS
                         <svg class="w-5 h-5 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>    
-                    </a>
+                    </router-link>
                 </div>
                 </div>
                 <div class="absolute top-0 right-5">

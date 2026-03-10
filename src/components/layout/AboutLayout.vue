@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="bg-base-100 py-20 px-6 md:px-12 lg:px-20 xl:px-30" data-aos="fade-up">
-    <div :class="`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} v-if gap-12 xl:gap-24 items-center justify-center max-w-7xl mx-auto`">
+    <div :class="`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 xl:gap-24 items-center justify-center max-w-7xl mx-auto`">
       <!-- Left: Image -->
       <div class="relative group min-w-[320px] xl:min-w-[450px] max-w-[400px]">
           <!-- Kotak Garis (Diletakkan di belakang dengan bingkai biru) -->
@@ -77,7 +77,7 @@ defineProps({
     type: String,
     default: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/yohanes-about"
   },
-  isReversed:{
+  isReversed: {
     type: Boolean,
     default: false
   }
