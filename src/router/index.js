@@ -40,6 +40,15 @@ const routes = [
       title: 'Personal Training Services in Canggu & Badung | Coach Yohanes',
       description: 'Explore personal training services including body transformation, strength training, and lifestyle coaching in Bali.'
     }
+  },
+  {
+    path: '/tips',
+    name: 'Tips',
+    component: () => import('../pages/TipsPage.vue'),
+    meta: {
+      title: 'Bali Fitness Blog & Training Tips | Coach Yohanes',
+      description: 'Expert insights on training, nutrition, and staying fit in Bali. Read the latest tips from Coach Yohanes.'
+    }
   }
 ]
 

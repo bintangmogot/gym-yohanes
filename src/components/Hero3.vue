@@ -11,7 +11,7 @@
       <div class="hero3-mobile-portrait" data-aos="fade" data-aos-duration="1000">
         <img
           src="https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-bike"
-          alt="Coach Yohanes"
+          alt="Coach Yohanes - Professional Personal Trainer in Canggu Bali"
           class="w-full h-full object-cover bg-bottom"
         />
         <!-- Dark overlay gradient for text readability -->
@@ -21,7 +21,7 @@
       <!-- Text on top of portrait -->
       <div class="hero3-mobile-text" data-aos="fade-up" data-aos-delay="300">
         <h1 class="text-white text-sm font-heading tracking-widest uppercase opacity-80">
-          GET IN SHAPE IN BALI
+          GET IN SHAPE IN CANGGU, BALI
         </h1>
         <h2 class="text-5xl font-extrabold italic text-white leading-[0.95] mt-2">
           WITH <span class="text-primary">YOHANES</span>
@@ -55,7 +55,7 @@
         }"
       >
         <h1 class="text-primary-content text-2xl lg:text-4xl font-heading font-bold leading-tight">
-          GET IN SHAPE IN BALI
+          GET IN SHAPE IN CANGGU, BALI
         </h1>
         <h2 class="text-5xl md:text-7xl lg:text-[9.5rem] font-extrabold italic text-primary-content leading-tight mb-[-0.2em]">
           WITH <span class="text-primary">YOHANES</span>
@@ -75,7 +75,7 @@
       >
         <img
           src="https://res.cloudinary.com/workstation-/image/upload/v1771686531/gym-yohanes/images/yohanes-bike"
-          alt="Coach Yohanes"
+          alt="Coach Yohanes - Professional Personal Trainer in Canggu Bali"
           class="w-full h-full object-cover border-10 border-white border-b-40"
         />
       </div>

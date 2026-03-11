@@ -120,6 +120,7 @@ const navigation = [
   { name: 'GALLERY', to: '/#gallery' },
   { name: 'TRANSFORMS', to: '/#transforms' },
   { name: 'SERVICES', to: '/#services'},
+  { name: 'TIPS', to: '/tips' },
   { name: 'PROGRAMS', to: '/#programs' },
   { name: 'FOOD', to: '/#food' },
   { name: 'CONSULTATION', to: '/#consultation' },
