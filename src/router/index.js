@@ -8,31 +8,44 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    // Cara ini: Filenya baru akan didownload PAS USER KLIK linknya aja
-    component: () => import('../pages/HomePage.vue')
+    component: () => import('../pages/HomePage.vue'),
+    meta: {
+      title: 'Coach Yohanes - Personal Trainer Canggu | Bali Fitness Coach',
+      description: 'Transform your body in Canggu, Bali with Coach Yohanes. Professional PT providing personalized workout and nutrition plans.'
+    }
   },
   {
     path: '/food',
     name: 'Food',
-    component: () => import('../pages/FoodPage.vue')
+    component: () => import('../pages/FoodPage.vue'),
+    meta: {
+      title: 'Healthy Food & Nutrition Plans | Coach Yohanes Bali',
+      description: 'Custom nutrition strategies and healthy food guides to complement your fitness journey in Bali with Coach Yohanes.'
+    }
   },
   {
     path: '/clients',
     name: 'Clients',
-    component: () => import('../pages/ClientsPage.vue')
+    component: () => import('../pages/ClientsPage.vue'),
+    meta: {
+      title: 'Client Transformations & Success Stories | Coach Yohanes',
+      description: 'See the real results and testimonials from expats and tourists who trained with Coach Yohanes in Canggu, Bali.'
+    }
   },
   {
     path: '/service',
     name: 'Service',
-    component: () => import('../pages/ServicePage.vue')
+    component: () => import('../pages/ServicePage.vue'),
+    meta: {
+      title: 'Personal Training Services in Canggu & Badung | Coach Yohanes',
+      description: 'Explore personal training services including body transformation, strength training, and lifestyle coaching in Bali.'
+    }
   }
-
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  // ⭐ Ini penting! Scroll ke atas saat pindah halaman
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       return {
@@ -42,6 +55,20 @@ const router = createRouter({
     }
     if (savedPosition) return savedPosition
     return { top: 0 }
+  }
+})
+
+// Dynamic SEO Guard
+router.afterEach((to) => {
+  // Update Title
+  const defaultTitle = 'Coach Yohanes - Personal Trainer Bali';
+  document.title = to.meta.title || defaultTitle;
+
+  // Update Meta Description
+  const description = to.meta.description || 'Professional Personal Trainer in Canggu, Bali.';
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute('content', description);
   }
 })
 

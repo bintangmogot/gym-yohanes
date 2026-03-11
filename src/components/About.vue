@@ -21,8 +21,8 @@
           <h2 class="text-5xl md:text-6xl text-base-content font-anton font-black uppercase mb-4 leading-tight">meet yohan</h2>
           <div class="w-16 h-1.5 bg-primary mb-8"></div>
           
-          <p class="text-base-content/80 font-body mb-6 leading-relaxed">Welcome to the next level of fitness. I am Yohan, a dedicated personal trainer based in the heart of Bali. My mission is simple: to help you achieve the physique and health you've always desired without sacrificing the lifestyle you love.</p>
-          <p class="text-base-content/80 block font-body mb-8 leading-relaxed">Specializing in body transformations for expats and tourists, I combine science-based training methodologies with personalized nutrition strategies. Whether you are here for a month or a lifetime, we build a sustainable path to your peak performance.</p>
+          <p class="text-base-content/80 font-body mb-6 leading-relaxed">Welcome to the next level of fitness. I am Yohan, a dedicated personal trainer based in Canggu, Bali. Serving the wider Badung area and nearby Denpasar. My mission is simple: to help you achieve the physique and health you've always desired without sacrificing the lifestyle you love.</p>
+          <p class="text-base-content/80 block font-body mb-8 leading-relaxed">Specializing in body transformations for expats and tourists across the Badung regency, I combine science-based training methodologies with personalized nutrition strategies. Whether you are here for a month or a lifetime, we build a sustainable path to your peak performance.</p>
           
           <!-- Features Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">

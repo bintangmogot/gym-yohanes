@@ -14,7 +14,7 @@
           Train <span class="text-primary">With Me.</span>
         </h2>
         <p class="text-md md:text-lg text-base-content/60 font-body font-normal leading-relaxed max-w-2xl">
-          Join me at Bali's premier fitness destination. State-of-the-art equipment in the heart of Canggu.
+          Based in Canggu, serving the wider Badung region and Denpasar. Train with me at Bali's premier fitness destinations.
         </p>
       </div>
 
