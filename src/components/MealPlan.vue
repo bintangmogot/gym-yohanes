@@ -104,7 +104,7 @@
                 <div class="flex items-center justify-center">
                     <RouterLink :to="{name: 'Food'}" class="w-fit flex items-center gap-2 text-base-content font-heading text-button underline px-6 py-2 hover:text-primary hover:bg-base-100 hover:shadow-lg hover:scale-102 transition-all duration-100 -m-5 group/link">
                        VIEW ALL MEAL PLAN.
-                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <svg class="w-5 h-5 transform group-hover/link:translate-x-1.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </RouterLink>
             </div>
 

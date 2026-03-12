@@ -184,7 +184,7 @@
       </div>
 
       <!-- View All Link -->
-      <router-link :to="{ name: 'Clients' }" class="group/link w-fit flex items-center gap-2 text-base-content hover:text-primary font-heading text-button tracking-wider px-6 py-3 border border-transparent hover:border-primary/20 hover:bg-base-100 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 underline">
+      <router-link :to="{ name: 'Clients' }" class="w-fit flex items-center gap-2 text-base-content font-heading text-button underline px-6 py-2 hover:text-primary hover:bg-base-100 hover:shadow-lg hover:scale-102 transition-all duration-100 -m-5 group/link">
         View All Transformations
         <svg class="w-4 h-4 group-hover/link:translate-x-1.5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
       </router-link>
