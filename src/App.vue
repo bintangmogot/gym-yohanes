@@ -10,7 +10,7 @@
         </transition>
       </router-view>
     </main>
-    <Footer />
+    <FooterLayout />
   </div>
 </template>
 
@@ -33,7 +33,7 @@ transition: all 0.2s cubic-bezier(0.2, 0, 0.2, 1);}
 
 <script setup>
 import Navbar from './components/Navbar.vue';
-import Footer from './components/Footer.vue';
+import FooterLayout from './components/layout/FooterLayout.vue';
 import { Analytics } from '@vercel/analytics/vue';
 import { SpeedInsights } from '@vercel/speed-insights/vue';
 </script>
