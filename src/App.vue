@@ -1,9 +1,9 @@
 <template>
   <Analytics />
   <SpeedInsights />
-  <div class="bg-bg-white font-body overflow-x-hidden">
+  <div class="bg-bg-white font-body overflow-x-clip">
     <Navbar />
-    <main class="min-h-screen">
+    <main class="min-h-dvh">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" />

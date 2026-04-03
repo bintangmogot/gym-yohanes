@@ -178,12 +178,14 @@
 html {
   scroll-padding-top: 80px;
   /* Sesuaikan dengan tinggi navbar */
+  overscroll-behavior-y: none;
 }
 
 body {
   font-family: var(--font-body);
   color: var(--color-base-content);
   background-color: var(--color-base-100);
+  overscroll-behavior-y: none;
 }
 
 h1,
