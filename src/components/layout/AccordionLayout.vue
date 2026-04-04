@@ -1,6 +1,6 @@
 <template>
     <section :class="`bg-base-100 py-20 px-6 lg:px-20 xl:px-32 relative overflow-hidden ${sectionClass}`" :id="sectionId">
-    <div class="flex flex-col gap-4 lg:gap-10">
+    <div class="max-w-7xl mx-auto w-full flex flex-col gap-4 lg:gap-10">
         <slot name="header">
           <h2 class="text-5xl md:text-7xl lg:text-8xl font-anton uppercase leading-[0.9] text-base-content text-center">
               {{ title }}
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    </section>
+  </section>
 </template>
 
 <script setup>

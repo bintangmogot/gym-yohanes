@@ -1,6 +1,6 @@
 <template>
     <section id="food" class="py-20 px-6 md:px-12 lg:px-20 xl:px-30 bg-base-200 overflow-hidden">
-        <div class="flex flex-col items-center justify-center gap-12">
+        <div class="flex flex-col items-center justify-center gap-12 max-w-7xl mx-auto">
             <div class="flex flex-row items-start justify-between w-full">
                 <div class="flex flex-col items-start justify-start gap-4">
                     <h3 class="text-primary font-bold italic tracking-wide uppercase font-body">Fuel Your Muscle</h3>

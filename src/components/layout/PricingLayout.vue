@@ -1,90 +1,92 @@
 <template>
   <section :class="`bg-base-100 py-20 px-6 lg:px-20 xl:px-32 relative overflow-hidden ${sectionClass}`" :id="sectionId" data-aos="fade-up">
-    <!-- Header -->
-    <slot name="header">
-      <div class="text-center mb-16">
-        <h3 class="text-primary font-title italic font-black text-xl md:text-2xl tracking-widest mb-2">{{ tagline }}</h3>
-        <h2 class="text-5xl md:text-7xl lg:text-8xl font-anton uppercase leading-[0.9] text-base-content">
-          {{ titleNormal }} <span class="text-primary">{{ titleHighlight }}</span>
-        </h2>
-        <p class="text-base-content/60 text-lg md:text-xl mt-6 max-w-2xl mx-auto">
-          {{ subtitle }}
-        </p>
-      </div>
-    </slot>
-
-    <!-- Pricing Cards -->
-    <div class="flex flex-row gap-8 mx-auto items-stretch xl:justify-start overflow-x-auto snap-x snap-mandatory px-4 lg:px-0 scrollbar-hide pb-12 pt-10">
-      <div v-for="(pkg, index) in packages" :key="index"
-        :class="[
-          'p-8 md:p-10 border border-t-4 shadow-card hover:shadow-card-hover transition-all hover:-translate-y-2 flex flex-col h-full relative group shrink-0 snap-center',
-          pkg.isPopular 
-            ? 'bg-base-100 border-primary shadow-2xl lg:-mt-4 lg:mb-4 z-10 scale-100 lg:scale-105' 
-            : 'bg-base-100 border-base-300 hover:border-primary'
-        ]"
-      >
-        <!-- Popular Badge -->
-        <div v-if="pkg.isPopular" class="absolute top-0 right-0 bg-primary text-primary-content text-xs font-bold px-3 py-1 uppercase tracking-wider font-sans">
-          {{ popularLabel }}
+    <div class="max-w-[1440px] mx-auto">
+      <!-- Header -->
+      <slot name="header">
+        <div class="text-center mb-16">
+          <h3 class="text-primary font-title italic font-black text-xl md:text-2xl tracking-widest mb-2">{{ tagline }}</h3>
+          <h2 class="text-5xl md:text-7xl lg:text-8xl font-anton uppercase leading-[0.9] text-base-content">
+            {{ titleNormal }} <span class="text-primary">{{ titleHighlight }}</span>
+          </h2>
+          <p class="text-base-content/60 text-lg md:text-xl mt-6 max-w-2xl mx-auto">
+            {{ subtitle }}
+          </p>
         </div>
+      </slot>
 
-        <!-- Package Name -->
-        <div class="mb-8">
-          <h3 :class="['font-anton text-4xl md:text-5xl uppercase mb-2', pkg.isPopular ? 'text-primary' : 'text-base-content']">
-            {{ pkg.name }}
-          </h3>
-          <p class="font-heading text-base-content/60 text-xl tracking-wide uppercase">{{ pkg.subtitle }}</p>
-        </div>
-        
-        <!-- Price -->
-        <div class="mb-8">
-          <div class="flex items-baseline gap-2">
-            <span class="font-anton text-6xl md:text-7xl text-base-content/80">{{ pkg.price }}</span>
-            <span class="font-heading text-2xl text-base-content/60">{{ pkg.currency }}</span>
-          </div>
-        </div>
-
-        <!-- Features -->
-        <ul class="flex flex-col gap-4 mb-10 grow">
-          <li v-for="(feature, fIndex) in pkg.features" :key="fIndex" 
-            :class="['flex items-center gap-3 text-body', feature.included ? 'font-medium text-base-content/80' : 'text-base-content/40']">
-            <div :class="['w-5 h-5 rounded-full flex items-center justify-center shrink-0', feature.included ? 'bg-primary' : 'bg-base-content/20']">
-              <svg v-if="feature.included" class="w-3 h-3 text-primary-content" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
-              <svg v-else class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" /></svg>
-            </div>
-            <span v-html="feature.text"></span>
-          </li>
-        </ul>
-
-        <!-- CTA Button -->
-        <a :href="pkg.buttonHref" target="_blank" 
+      <!-- Pricing Cards -->
+      <div class="flex flex-row gap-8 items-stretch xl:justify-start overflow-x-auto snap-x snap-mandatory px-4 lg:px-0 scrollbar-hide pb-12 pt-10">
+        <div v-for="(pkg, index) in packages" :key="index"
           :class="[
-            'block w-full text-center py-4 font-heading text-xl tracking-wider transition-all uppercase',
+            'p-8 md:p-10 border border-t-4 shadow-card hover:shadow-card-hover transition-all hover:-translate-y-2 flex flex-col h-full relative group shrink-0 snap-center xl:first:ml-auto xl:last:mr-auto',
             pkg.isPopular 
-              ? 'bg-primary border-2 border-primary text-primary-content hover:bg-primary-focus hover:border-primary-focus shadow-lg' 
-              : 'border-2 border-primary text-base-content/80 hover:bg-base-100 hover:text-primary hover:border-primary hover:shadow-lg'
+              ? 'bg-base-100 border-primary shadow-2xl lg:-mt-4 lg:mb-4 z-10 scale-100 lg:scale-105' 
+              : 'bg-base-100 border-base-300 hover:border-primary'
           ]"
         >
-          {{ pkg.buttonText || buttonText }}
-        </a>
-      </div>
-    </div>
+          <!-- Popular Badge -->
+          <div v-if="pkg.isPopular" class="absolute top-0 right-0 bg-primary text-primary-content text-xs font-bold px-3 py-1 uppercase tracking-wider font-sans">
+            {{ popularLabel }}
+          </div>
 
-    <!-- Bottom Info Cards -->
-    <slot name="footer">
-      <div v-if="infoCards.length" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-10 mb-10">
-        <div v-for="(info, index) in infoCards" :key="index" 
-          class="bg-base-100 border-l-4 border-primary p-6 md:p-8 shadow-sm flex items-start gap-4 hover:shadow-md transition-all">
-          <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
-            <span v-html="info.icon"></span>
+          <!-- Package Name -->
+          <div class="mb-8">
+            <h3 :class="['font-anton text-4xl md:text-5xl uppercase mb-2', pkg.isPopular ? 'text-primary' : 'text-base-content']" >
+              {{ pkg.name }}
+            </h3>
+            <p class="font-heading text-base-content/60 text-xl tracking-wide uppercase">{{ pkg.subtitle }}</p>
           </div>
-          <div>
-            <h4 class="font-anton text-xl uppercase text-base-content/80 mb-1">{{ info.title }}</h4>
-            <p class="text-base-content/60">{{ info.description }}</p>
+          
+          <!-- Price -->
+          <div class="mb-8">
+            <div class="flex items-baseline gap-2">
+              <span class="font-anton text-6xl md:text-7xl text-base-content/80">{{ pkg.price }}</span>
+              <span class="font-heading text-2xl text-base-content/60">{{ pkg.currency }}</span>
+            </div>
           </div>
+
+          <!-- Features -->
+          <ul class="flex flex-col gap-4 mb-10 grow">
+            <li v-for="(feature, fIndex) in pkg.features" :key="fIndex" 
+              :class="['flex items-center gap-3 text-body', feature.included ? 'font-medium text-base-content/80' : 'text-base-content/40']">
+              <div :class="['w-5 h-5 rounded-full flex items-center justify-center shrink-0', feature.included ? 'bg-primary' : 'bg-base-content/20']">
+                <svg v-if="feature.included" class="w-3 h-3 text-primary-content" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                <svg v-else class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" /></svg>
+              </div>
+              <span v-html="feature.text"></span>
+            </li>
+          </ul>
+
+          <!-- CTA Button -->
+          <a :href="pkg.buttonHref" target="_blank" 
+            :class="[
+              'block w-full text-center py-4 font-heading text-xl tracking-wider transition-all uppercase',
+              pkg.isPopular 
+                ? 'bg-primary border-2 border-primary text-primary-content hover:bg-primary-focus hover:border-primary-focus shadow-lg' 
+                : 'border-2 border-primary text-base-content/80 hover:bg-base-100 hover:text-primary hover:border-primary hover:shadow-lg'
+            ]"
+          >
+            {{ pkg.buttonText || buttonText }}
+          </a>
         </div>
       </div>
-    </slot>
+
+      <!-- Bottom Info Cards -->
+      <slot name="footer">
+        <div v-if="infoCards.length" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-10 mb-10">
+          <div v-for="(info, index) in infoCards" :key="index" 
+            class="bg-base-100 border-l-4 border-primary p-6 md:p-8 shadow-sm flex items-start gap-4 hover:shadow-md transition-all">
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+              <span v-html="info.icon"></span>
+            </div>
+            <div>
+              <h4 class="font-anton text-xl uppercase text-base-content/80 mb-1">{{ info.title }}</h4>
+              <p class="text-base-content/60">{{ info.description }}</p>
+            </div>
+          </div>
+        </div>
+      </slot>
+    </div>
   </section>
 </template>
 

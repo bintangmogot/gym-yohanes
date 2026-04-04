@@ -1,4 +1,4 @@
-﻿<template>
+<template>
     <section class="relative overflow-hidden" id="gallery">
 
         <!-- ======================= -->
@@ -90,7 +90,7 @@
         <!-- Full 10-column Bento  -->
         <!-- ===================== -->
         <div class="hidden lg:block py-20 px-6 lg:px-20 xl:px-30 bg-base-200">
-            <div class="flex flex-col items-center gap-12">
+            <div class="flex flex-col items-center gap-12 max-w-7xl mx-auto">
                 <!-- Header -->
                 <div class="flex flex-col items-center gap-4 text-center">
                     <h2 class="text-5xl md:text-7xl text-base-content font-anton font-black uppercase leading-tight">

@@ -1,6 +1,6 @@
 <template>
     <section :id="sectionId" :class="`bg-neutral py-20 px-6 md:px-12 lg:px-20 xl:px-30 ${sectionClass}`">
-        <div class="flex flex-col gap-4 md:gap-8 justify-start">
+        <div class="flex flex-col gap-4 md:gap-8 justify-start max-w-7xl mx-auto">
             <slot name="header">
               <h2 class="text-5xl md:text-6xl text-primary font-anton font-black uppercase leading-none -mb-4">{{ sectionNumber }} <span class="text-white">{{ sectionTitle }}</span></h2>
             </slot>

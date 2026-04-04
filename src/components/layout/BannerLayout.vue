@@ -1,5 +1,6 @@
 <template>
   <section :class="`bg-neutral py-24 xl:py-32 px-6 md:px-12 lg:px-20 xl:px-32 relative overflow-hidden ${sectionClass}`">
+    <div class="max-w-7xl mx-auto">
     <!-- CTA Banner -->
     <div 
       data-aos="fade-up"
@@ -61,6 +62,7 @@
           </div>
       </div>
     </slot>
+    </div>
   </section>
 </template>
 

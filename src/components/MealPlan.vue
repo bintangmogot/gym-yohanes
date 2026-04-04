@@ -1,6 +1,6 @@
 <template>
     <section id="food" class="py-20 px-6 md:px-12 lg:px-20 xl:px-30 bg-base-200 overflow-hidden">
-        <div class="flex flex-col items-center justify-center gap-12">
+        <div class="flex flex-col items-center justify-center gap-12 max-w-7xl mx-auto">
             <div class="flex flex-row items-start justify-between w-full">
                 <div class="flex flex-col items-start justify-start gap-4">
                     <h3 class="text-primary font-bold italic tracking-wide uppercase font-body">Fuel Your Muscle</h3>
@@ -48,7 +48,7 @@
                         <div>
                             <h3 class="font-anton text-2xl uppercase text-base-content/80 leading-tight mb-1">{{ meal.title }}</h3>
                             <div class="flex items-center gap-2 text-base-content/60 font-body text-sm">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                                 {{ meal.description }}
                             </div>
                         </div>
@@ -110,7 +110,7 @@
 
         </div>
         
-    </section>
+</section>
 </template>
 
 <script setup>
