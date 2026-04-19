@@ -9,7 +9,7 @@
       </header>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <article v-for="(post, index) in tips" :key="index" class="bg-base-200 group overflow-hidden border border-base-300 hover:border-primary transition-all duration-300">
+        <router-link v-for="(post, index) in tips" :key="index" :to="`/tips/${post.slug}`" class="bg-base-200 group overflow-hidden border border-base-300 hover:border-primary transition-all duration-300 block">
           <div class="aspect-video overflow-hidden">
             <img :src="post.image" :alt="post.title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
@@ -21,9 +21,9 @@
             </div>
             <h2 class="text-3xl font-anton uppercase text-base-content mb-4 leading-tight group-hover:text-primary transition-colors cursor-pointer">{{ post.title }}</h2>
             <p class="text-base-content/60 font-body mb-6 line-clamp-3 italic">{{ post.excerpt }}</p>
-            <button class="text-base-content font-heading uppercase text-sm border-b-2 border-primary pb-1 hover:text-primary transition-all">Read Insight</button>
+            <span class="text-base-content font-heading uppercase text-sm border-b-2 border-primary pb-1 group-hover:text-primary transition-all">Read Insight</span>
           </div>
-        </article>
+        </router-link>
       </div>
     </div>
   </div>
@@ -36,21 +36,24 @@ const tips = [
     excerpt: "Traveling to Bali doesn't mean you have to lose your progress. Learn how to balance Nasi Campur with high-intensity training.",
     category: "Nutrition",
     date: "MAR 10, 2026",
-    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-legpress"
+    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-legpress",
+    slug: "stay-fit-bali-food"
   },
   {
     title: "3 Essential weight training tips for expats",
     excerpt: "Consistency is harder when you're living the island life. Coach Yohanes shares the secrets to maintaining muscle mass in the tropics.",
     category: "Training",
     date: "MAR 05, 2026",
-    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-tripul"
+    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-tripul",
+    slug: "3-essential-weight-training-tips"
   },
   {
     title: "Why recovery is your best friend in Bali's heat",
     excerpt: "Training in Canggu's humidity requires a different approach to recovery. Discover the best local recovery strategies.",
     category: "Recovery",
     date: "FEB 28, 2026",
-    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-grassmc"
+    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-grassmc",
+    slug: "recovery-is-your-best-friend"
   }
 ]
 </script>

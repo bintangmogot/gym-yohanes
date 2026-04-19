@@ -228,69 +228,6 @@ const clients = ref([
     desc: "Gained 5kg lean muscle",
     metric: "+5 KG"
   },
-  {
-    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client2",
-    title: "Post-Pregnancy",
-    tag: "Recovery",
-    desc: "Back in shape in 4 months",
-    metric: "4 MO"
-  },
-  {
-    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client-clemens",
-    title: "Strength Consult",
-    tag: "Strength",
-    desc: "Doubled lifting PRs",
-    metric: "2X PR"
-  },
-  {
-    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client1",
-    title: "Lifestyle Change",
-    tag: "Wellness",
-    desc: "Healthy habits for life",
-    metric: "100%"
-  },
-  {
-    image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client2",
-    title: "Competition Prep",
-    tag: "Bodybuilding",
-    desc: "Stage ready in 12 weeks",
-    metric: "12 WK"
-  },
-  {
-  image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client2",
-  title: "Competition Prep",
-  tag: "Bodybuilding",
-  desc: "Stage ready in 12 weeks",
-  metric: "12 WK"
-},
-  {
-  image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client2",
-  title: "Competition Prep",
-  tag: "Bodybuilding",
-  desc: "Stage ready in 12 weeks",
-  metric: "12 WK"
-},
-  {
-  image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client2",
-  title: "Competition Prep",
-  tag: "Bodybuilding",
-  desc: "Stage ready in 12 weeks",
-  metric: "12 WK"
-},
-  {
-  image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client2",
-  title: "Competition Prep",
-  tag: "Bodybuilding",
-  desc: "Stage ready in 12 weeks",
-  metric: "12 WK"
-},
-  {
-  image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client2",
-  title: "Competition Prep",
-  tag: "Bodybuilding",
-  desc: "Stage ready in 12 weeks",
-  metric: "12 WK"
-},
 ]);
 
 // ==========================================

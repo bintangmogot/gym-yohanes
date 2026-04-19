@@ -77,6 +77,15 @@ const routes = [
       description: 'Expert insights on training, nutrition, and staying fit in Bali. Read the latest tips from Coach Yohanes.'
     }
   }, 
+  {
+    path: '/tips/:slug',
+    name: 'TipDetail',
+    component: () => import('../pages/TipDetailPage.vue'),
+    meta: {
+      title: 'Fitness Insight | Coach Yohanes',
+      description: 'Read the full fitness insight and training tips from Coach Yohanes.'
+    }
+  },
 ]
 
 const router = createRouter({
@@ -87,6 +96,7 @@ const router = createRouter({
       return {
         el: to.hash,
         behavior: 'smooth',
+        top: 100, // Offset for sticky navbar
       }
     }
     if (savedPosition) return savedPosition
