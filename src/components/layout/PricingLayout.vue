@@ -14,6 +14,8 @@
         </div>
       </slot>
 
+      <TrainingProcessMilestone />
+
       <!-- Pricing Cards -->
       <div class="flex flex-row gap-8 items-stretch xl:justify-start overflow-x-auto snap-x snap-mandatory px-4 lg:px-0 scrollbar-hide pb-12 pt-10">
         <div v-for="(pkg, index) in packages" :key="index"
@@ -86,11 +88,14 @@
           </div>
         </div>
       </slot>
+
     </div>
   </section>
 </template>
 
 <script setup>
+import TrainingProcessMilestone from './TrainingProcessMilestone.vue'
+
 defineProps({
   sectionId: {
     type: String,

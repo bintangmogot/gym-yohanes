@@ -42,6 +42,7 @@ declare module 'vue' {
     Services: typeof import('./components/Services.vue')['default']
     StatsGridLayout: typeof import('./components/layout/StatsGridLayout.vue')['default']
     TrainingPackages: typeof import('./components/TrainingPackages.vue')['default']
+    TrainingProcessMilestone: typeof import('./components/layout/TrainingProcessMilestone.vue')['default']
     Transforms: typeof import('./components/Transforms.vue')['default']
   }
 }
