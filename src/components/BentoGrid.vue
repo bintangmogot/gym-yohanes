@@ -43,7 +43,7 @@
                         >
                             <video
                                 :ref="el => { if (el) mobileVideoRefs[index] = el }"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                :class="['w-full h-full object-cover group-hover:scale-110 transition-transform duration-500', video.position || 'object-center']"
                                 muted loop playsinline
                                 preload="none"
                                 :poster="video.poster"
@@ -116,7 +116,7 @@
                         <!-- Video — preload="none", loaded via IntersectionObserver -->
                         <video
                             :ref="el => { if (el) videoRefs[index] = el }"
-                            class="bento-video w-full h-full object-cover transition-transform duration-500"
+                            :class="['bento-video w-full h-full object-cover transition-transform duration-500', video.position || 'object-center']"
                             muted loop playsinline
                             preload="none"
                             :poster="video.poster"
@@ -189,16 +189,16 @@ const cellWidths = {
 }
 
 const videoNames = [
-    'gym-yohanes/videos/clientA2',
-    'gym-yohanes/videos/0410',
-    'gym-yohanes/videos/IMG_6491',
-    'gym-yohanes/videos/clientA',
-    'gym-yohanes/videos/clientB',    
+    'gym-yohanes/videos/CLAUDIA_',
+    'gym-yohanes/videos/GRETA',
+    'gym-yohanes/videos/MARIA',
+    'gym-yohanes/videos/MICHELE',
+    'gym-yohanes/videos/LAURA',    
     'gym-yohanes/videos/WORKOUT_TIPS_BY_PT_SITUPS',
-    'gym-yohanes/videos/clientC2',
-    'gym-yohanes/videos/clientD2',    
-    'gym-yohanes/videos/IMG_6490',
-    'gym-yohanes/videos/0410_2',
+    'gym-yohanes/videos/MIRYAM',
+    'gym-yohanes/videos/KENAN',    
+    'gym-yohanes/videos/ALKESH',
+    'gym-yohanes/videos/LUCAS',
     // 'gym-yohanes/videos/20220502_124444',
     // 'gym-yohanes/videos/20230320_095346',
     // 'gym-yohanes/videos/20230318_175710',
@@ -207,21 +207,16 @@ const videoNames = [
 ]
 
 const videoLabels = [
-    { label: 'Coach Session #1', category: '' },
-    { label: 'Coach Session #2', category: '' },
-    { label: 'Maria', category: '' },
-    { label: 'Coach Session #3', category: '' },
-    { label: 'Coach Session #4', category: '' },
-    { label: 'Coach Session #5', category: '' },
-    { label: 'Coach Session #6', category: '' },
-    { label: 'Coach Session #7', category: '' },
-    { label: 'Coach Session #8', category: '' },
-    { label: 'Coach Session #9', category: '' },
-    // { label: 'Transformation #3', category: 'Before & After' },
-    // { label: 'Boxing Drills',     category: 'Workout' },
-    // { label: 'Recovery Day',      category: 'Wellness' },
-    // { label: 'Coach Yohan',       category: 'Behind the Scenes' },
-    // { label: 'Community Event',   category: 'Events' },
+    { label: 'Claudia', category: '', position: 'object-center' },
+    { label: 'Greta', category: '', position: 'object-center' },
+    { label: 'Maria', category: '', position: 'object-center' },
+    { label: 'Michele', category: '', position: 'object-center' },
+    { label: 'Laura', category: '', position: 'object-[center_60%]' }, // #5 - A little up
+    { label: 'Workout Tips', category: '', position: 'object-center' },
+    { label: 'Miryam', category: '', position: 'object-center' },
+    { label: 'Kenan', category: '', position: 'object-center' },
+    { label: 'Alkesh', category: '', position: 'object-[center_20%]' }, // #9 - More up
+    { label: 'Lucas', category: '', position: 'object-[center_60%]' }, // #10 - Subtle up
 ]
 
 const videos = ref(videoNames.map((name, i) => ({
