@@ -30,6 +30,8 @@
         </div>
       </header>
 
+      <div class="divider h-[2px] bg-primary/10"></div>
+
       <div class="flex flex-col lg:flex-row gap-12 relative">
         <!-- Main Content -->
         <main class="lg:w-2/3 max-w-none font-body prose-content">

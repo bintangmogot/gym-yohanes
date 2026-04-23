@@ -218,8 +218,8 @@ const clients = ref([
     image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client-clemens",
     title: "Weight Loss Journey",
     tag: "Fat Loss",
-    desc: "Lost 20kg in 6 months",
-    metric: "-20 KG"
+    desc: "Lost 6kg in 4 months",
+    metric: "-6 KG"
   },
   {
     image: "https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/client1",
