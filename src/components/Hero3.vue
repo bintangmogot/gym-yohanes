@@ -160,7 +160,7 @@ const mobileGallery = [
 // Scattered photos (used on tablet & desktop)
 const scatteredPhotos = [
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_500/gym-yohanes/images/yohanes-bike',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_500/gym-yohanes/images/yohanes/yohanes3',
     alt: 'Yohanes Bike',
     size: 'clamp(120px, 18vw, 240px)',
     startX: -80, startY: -60,
@@ -169,7 +169,7 @@ const scatteredPhotos = [
     z: 20,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes-grassmc',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes/yohanes4',
     alt: 'Grass MC',
     size: 'clamp(100px, 14vw, 200px)',
     startX: 80, startY: -80,
@@ -178,7 +178,7 @@ const scatteredPhotos = [
     z: 15,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes-tripul',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes/yohanes',
     alt: 'Tripul',
     size: 'clamp(110px, 15vw, 210px)',
     startX: -90, startY: 70,
@@ -187,7 +187,7 @@ const scatteredPhotos = [
     z: 25,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes-legpress',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes/yohanes2',
     alt: 'Legpress',
     size: 'clamp(100px, 13vw, 190px)',
     startX: 90, startY: 80,
@@ -205,7 +205,7 @@ const scatteredPhotos = [
   //   z: 10,
   // },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-intigh',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes/yohanes6',
     alt: 'Intigh',
     size: 'clamp(80px, 10vw, 150px)',
     startX: 100, startY: -20,
@@ -214,8 +214,8 @@ const scatteredPhotos = [
     z: 12,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_300/gym-yohanes/images/yohanes-tbar2',
-    alt: 'T-Bar 2',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_300/gym-yohanes/images/yohanes/run-community',
+    alt: 'Run Community 3',
     size: 'clamp(70px, 8vw, 130px)',
     startX: 0, startY: -100,
     endX: -5, endY: -35,
@@ -223,8 +223,8 @@ const scatteredPhotos = [
     z: 5,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_300/gym-yohanes/images/yohanes-tbar',
-    alt: 'T-Bar 3',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_300/gym-yohanes/images/yohanes/run-community2',
+    alt: 'Run Community 2',
     size: 'clamp(70px, 8vw, 150px)',
     startX: 0, startY: -100,
     endX: 10, endY: -25,
@@ -232,8 +232,8 @@ const scatteredPhotos = [
     z: 5,
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes-legpress',
-    alt: 'Legpress 2',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_400/gym-yohanes/images/yohanes/run-community3',
+    alt: 'Run Community',
     size: 'clamp(80px, 11vw, 160px)',
     startX: -40, startY: 100,
     endX: -20, endY: 14,
