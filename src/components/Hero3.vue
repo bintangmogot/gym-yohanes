@@ -10,9 +10,9 @@
       <!-- Portrait as background-like element -->
       <div class="hero3-mobile-portrait" data-aos="fade" data-aos-duration="1000">
         <img
-          src="https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto/gym-yohanes/images/yohanes-grassmc"
+          src="https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/yohanes/yohanes2"
           alt="Coach Yohanes - Professional Personal Trainer in Canggu Bali"
-          class="w-full h-full object-cover object-bottom-right"
+          class="w-full h-full object-cover object-center"
         />
         <!-- Dark overlay gradient for text readability -->
         <div class="hero3-mobile-overlay"></div>
@@ -152,7 +152,7 @@ const mobileGallery = [
     alt: 'Client Clemens',
   },
   {
-    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_300/gym-yohanes/images/yohanes/yohanes2',
+    src: 'https://res.cloudinary.com/workstation-/image/upload/f_auto,q_auto,w_300/gym-yohanes/images/yohanes/yohanes6',
     alt: 'Gym Equipment',
   },
 ]
@@ -406,7 +406,7 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right bottom;
+  object-position: center;
 }
 
 /* Dark gradient overlay so text is readable */
