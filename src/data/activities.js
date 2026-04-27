@@ -27,8 +27,7 @@ export const activities = [
     location: 'Canggu Beach',
     tag: 'Run Club',
     cover: 'images/yohanes/run-community',
-    photos: [
-      { src: 'videos/WORKOUT_TIPS_BY_PT_SITUPS.mp4', type: 'video', caption: 'Morning meetup at Canggu Beach' },
+    photos: [ 
       { src: 'images/yohanes/run-community2', caption: 'Starting line energy' },
       { src: 'images/yohanes/run-community3', caption: '' },
       { src: 'images/yohanes/yohanes3', caption: 'Coach Yohanes leading the pace' },
@@ -113,6 +112,25 @@ export const activities = [
       { src: 'images/yohanes/yohanes2', caption: 'Hip opener series' },
       { src: 'images/yohanes/run-community', caption: 'Group mobility circle' },
       { src: 'images/yohanes/yohanes4', caption: '' },
+    ]
+  },
+  {
+    id: 'clients-sessions-2026',
+    title: 'Clients Sessions',
+    date: '2026',
+    location: 'Avenue Fitness',
+    tag: 'Training',
+    cover: 'images/yohanes-grassmc',
+    photos: [
+      { src: 'videos/MICHELE', type: 'video', caption: 'Private PT Training Michele' },
+      { src: 'videos/LUCAS', type: 'video', caption: 'Private PT Training Lucas' },
+      { src: 'videos/MARIA', type: 'video', caption: 'Private PT Training Maria' },
+      { src: 'videos/GRETA', type: 'video', caption: 'Private PT Training Greta' },
+      { src: 'videos/KENAN', type: 'video', caption: 'Private PT Training Kenan' },
+      { src: 'videos/MIRYAM', type: 'video', caption: 'Private PT Training Miryam' },
+      { src: 'videos/CLAUDIA', type: 'video', caption: 'Private PT Training Claudia' },
+      { src: 'videos/LAURA', type: 'video', caption: 'Private PT Training Laura' },
+      { src: 'videos/CLAUDIA_', type: 'video', caption: 'Private PT Training Claudia_' },
     ]
   },
 ];

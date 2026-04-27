@@ -10,7 +10,7 @@
       <!-- Portrait as background-like element -->
       <div class="hero3-mobile-portrait" data-aos="fade" data-aos-duration="1000">
         <img
-          src="https://res.cloudinary.com/workstation-/image/upload/f_auto/gym-yohanes/images/yohanes/yohanes2"
+          src="https://res.cloudinary.com/workstation-/image/upload/yohanes2b_5e56cf"
           alt="Coach Yohanes - Professional Personal Trainer in Canggu Bali"
           class="w-full h-full object-cover object-center"
         />
